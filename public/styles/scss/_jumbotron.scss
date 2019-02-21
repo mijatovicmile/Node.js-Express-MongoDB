@@ -1,0 +1,27 @@
+.jumbotron {
+  padding: $jumbotron-padding ($jumbotron-padding / 2);
+  margin-bottom: $jumbotron-padding;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  color: $jumbotron-color;
+=======
+<<<<<<< HEAD
+>>>>>>> b581025... Updating EJS Template
+=======
+>>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
+=======
+>>>>>>> b695cb8... Updating EJS Template
+>>>>>>> 060937b... Rebase
+  background-color: $jumbotron-bg;
+  @include border-radius($border-radius-lg);
+
+  @include media-breakpoint-up(sm) {
+    padding: ($jumbotron-padding * 2) $jumbotron-padding;
+  }
+}
+
+.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  @include border-radius(0);
+}

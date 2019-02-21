@@ -1,0 +1,33 @@
+// List Groups
+
+@mixin list-group-item-variant($state, $background, $color) {
+  .list-group-item-#{$state} {
+    color: $color;
+    background-color: $background;
+
+    &.list-group-item-action {
+      @include hover-focus {
+        color: $color;
+        background-color: darken($background, 5%);
+      }
+
+      &.active {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        color: $white;
+=======
+        color: #fff;
+<<<<<<< HEAD
+>>>>>>> b581025... Updating EJS Template
+=======
+>>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
+=======
+        color: #fff;
+>>>>>>> b695cb8... Updating EJS Template
+>>>>>>> 060937b... Rebase
+        background-color: $color;
+        border-color: $color;
+      }
+    }
+  }
+}

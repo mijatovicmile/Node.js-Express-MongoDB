@@ -1,0 +1,33 @@
+// CSS image replacement
+<<<<<<< HEAD
+<<<<<<< HEAD
+@mixin text-hide($ignore-warning: false) {
+=======
+@mixin text-hide() {
+<<<<<<< HEAD
+>>>>>>> b581025... Updating EJS Template
+=======
+>>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
+=======
+@mixin text-hide() {
+>>>>>>> b695cb8... Updating EJS Template
+>>>>>>> 060937b... Rebase
+  // stylelint-disable-next-line font-family-no-missing-generic-family-keyword
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+  @include deprecate("`text-hide()`", "v4.1.0", "v5", $ignore-warning);
+=======
+<<<<<<< HEAD
+>>>>>>> b581025... Updating EJS Template
+=======
+>>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
+=======
+>>>>>>> b695cb8... Updating EJS Template
+>>>>>>> 060937b... Rebase
+}

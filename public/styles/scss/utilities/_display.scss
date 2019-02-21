@@ -1,0 +1,70 @@
+// stylelint-disable declaration-no-important
+
+//
+// Utilities for common `display` values
+//
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+    @each $value in $displays {
+      .d#{$infix}-#{$value} { display: $value !important; }
+    }
+=======
+=======
+>>>>>>> b695cb8... Updating EJS Template
+    .d#{$infix}-none         { display: none !important; }
+    .d#{$infix}-inline       { display: inline !important; }
+    .d#{$infix}-inline-block { display: inline-block !important; }
+    .d#{$infix}-block        { display: block !important; }
+    .d#{$infix}-table        { display: table !important; }
+    .d#{$infix}-table-row    { display: table-row !important; }
+    .d#{$infix}-table-cell   { display: table-cell !important; }
+    .d#{$infix}-flex         { display: flex !important; }
+    .d#{$infix}-inline-flex  { display: inline-flex !important; }
+<<<<<<< HEAD
+>>>>>>> b581025... Updating EJS Template
+=======
+<<<<<<< HEAD
+>>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
+=======
+>>>>>>> b695cb8... Updating EJS Template
+>>>>>>> 060937b... Rebase
+  }
+}
+
+
+//
+// Utilities for toggling `display` in print
+//
+
+@media print {
+<<<<<<< HEAD
+<<<<<<< HEAD
+  @each $value in $displays {
+    .d-print-#{$value} { display: $value !important; }
+  }
+=======
+=======
+>>>>>>> b695cb8... Updating EJS Template
+  .d-print-none         { display: none !important; }
+  .d-print-inline       { display: inline !important; }
+  .d-print-inline-block { display: inline-block !important; }
+  .d-print-block        { display: block !important; }
+  .d-print-table        { display: table !important; }
+  .d-print-table-row    { display: table-row !important; }
+  .d-print-table-cell   { display: table-cell !important; }
+  .d-print-flex         { display: flex !important; }
+  .d-print-inline-flex  { display: inline-flex !important; }
+<<<<<<< HEAD
+>>>>>>> b581025... Updating EJS Template
+=======
+<<<<<<< HEAD
+>>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
+=======
+>>>>>>> b695cb8... Updating EJS Template
+>>>>>>> 060937b... Rebase
+}

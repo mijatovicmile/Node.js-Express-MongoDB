@@ -1,0 +1,69 @@
+// Toggles
+//
+// Used in conjunction with global variables to enable certain theme features.
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+// Vendor
+@import "vendor/rfs";
+
+// Deprecate
+@import "mixins/deprecate";
+
+=======
+<<<<<<< HEAD
+>>>>>>> b581025... Updating EJS Template
+=======
+>>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
+=======
+>>>>>>> b695cb8... Updating EJS Template
+>>>>>>> 060937b... Rebase
+// Utilities
+@import "mixins/breakpoints";
+@import "mixins/hover";
+@import "mixins/image";
+@import "mixins/badge";
+@import "mixins/resize";
+@import "mixins/screen-reader";
+@import "mixins/size";
+@import "mixins/reset-text";
+@import "mixins/text-emphasis";
+@import "mixins/text-hide";
+@import "mixins/text-truncate";
+@import "mixins/visibility";
+
+// // Components
+@import "mixins/alert";
+@import "mixins/buttons";
+@import "mixins/caret";
+@import "mixins/pagination";
+@import "mixins/lists";
+@import "mixins/list-group";
+@import "mixins/nav-divider";
+@import "mixins/forms";
+@import "mixins/table-row";
+
+// // Skins
+@import "mixins/background-variant";
+@import "mixins/border-radius";
+@import "mixins/box-shadow";
+@import "mixins/gradients";
+@import "mixins/transition";
+
+// // Layout
+@import "mixins/clearfix";
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+// @import "mixins/navbar-align";
+<<<<<<< HEAD
+>>>>>>> b581025... Updating EJS Template
+=======
+>>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
+=======
+// @import "mixins/navbar-align";
+>>>>>>> b695cb8... Updating EJS Template
+>>>>>>> 060937b... Rebase
+@import "mixins/grid-framework";
+@import "mixins/grid";
+@import "mixins/float";

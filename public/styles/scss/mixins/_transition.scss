@@ -1,0 +1,36 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+// stylelint-disable property-blacklist
+=======
+<<<<<<< HEAD
+>>>>>>> b581025... Updating EJS Template
+=======
+>>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
+=======
+>>>>>>> b695cb8... Updating EJS Template
+>>>>>>> 060937b... Rebase
+@mixin transition($transition...) {
+  @if $enable-transitions {
+    @if length($transition) == 0 {
+      transition: $transition-base;
+    } @else {
+      transition: $transition;
+    }
+  }
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+  @if $enable-prefers-reduced-motion-media-query {
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
+  }
+=======
+<<<<<<< HEAD
+>>>>>>> b581025... Updating EJS Template
+=======
+>>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
+=======
+>>>>>>> b695cb8... Updating EJS Template
+>>>>>>> 060937b... Rebase
+}

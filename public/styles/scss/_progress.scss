@@ -1,0 +1,95 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+// Disable animation if transitions are disabled
+@if $enable-transitions {
+  @keyframes progress-bar-stripes {
+    from { background-position: $progress-height 0; }
+    to { background-position: 0 0; }
+  }
+=======
+@keyframes progress-bar-stripes {
+  from { background-position: $progress-height 0; }
+  to { background-position: 0 0; }
+<<<<<<< HEAD
+>>>>>>> b581025... Updating EJS Template
+=======
+>>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
+=======
+@keyframes progress-bar-stripes {
+  from { background-position: $progress-height 0; }
+  to { background-position: 0 0; }
+>>>>>>> b695cb8... Updating EJS Template
+>>>>>>> 060937b... Rebase
+}
+
+.progress {
+  display: flex;
+  height: $progress-height;
+  overflow: hidden; // force rounded corners by cropping it
+<<<<<<< HEAD
+<<<<<<< HEAD
+  @include font-size($progress-font-size);
+=======
+  font-size: $progress-font-size;
+<<<<<<< HEAD
+>>>>>>> b581025... Updating EJS Template
+=======
+>>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
+=======
+  font-size: $progress-font-size;
+>>>>>>> b695cb8... Updating EJS Template
+>>>>>>> 060937b... Rebase
+  background-color: $progress-bg;
+  @include border-radius($progress-border-radius);
+  @include box-shadow($progress-box-shadow);
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $progress-bar-color;
+  text-align: center;
+<<<<<<< HEAD
+<<<<<<< HEAD
+  white-space: nowrap;
+=======
+<<<<<<< HEAD
+>>>>>>> b581025... Updating EJS Template
+=======
+>>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
+=======
+>>>>>>> b695cb8... Updating EJS Template
+>>>>>>> 060937b... Rebase
+  background-color: $progress-bar-bg;
+  @include transition($progress-bar-transition);
+}
+
+.progress-bar-striped {
+  @include gradient-striped();
+  background-size: $progress-height $progress-height;
+}
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+@if $enable-transitions {
+  .progress-bar-animated {
+    animation: progress-bar-stripes $progress-bar-animation-timing;
+
+    @media (prefers-reduced-motion: reduce) {
+      animation: none;
+    }
+  }
+=======
+.progress-bar-animated {
+  animation: progress-bar-stripes $progress-bar-animation-timing;
+<<<<<<< HEAD
+>>>>>>> b581025... Updating EJS Template
+=======
+>>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
+=======
+.progress-bar-animated {
+  animation: progress-bar-stripes $progress-bar-animation-timing;
+>>>>>>> b695cb8... Updating EJS Template
+>>>>>>> 060937b... Rebase
+}

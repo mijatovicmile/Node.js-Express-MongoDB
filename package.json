@@ -1,0 +1,40 @@
+{
+  "name": "node.js-mvc-restfull-api-mongodb",
+  "version": "1.0.0",
+  "description": "Node.js / MVC (Model View Controller) / Restfull API / MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "build:scss": "node-sass public/styles/scss/bootstrap.scss public/styles/style.css --output-style compressed ",
+    "watch:scss": "npm run build:scss -- -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mijatovicmile/Node.js-MVC-RESTfull-API-MongoDB.git"
+  },
+  "keywords": [
+    "node.js",
+    "mvc",
+    "model",
+    "views",
+    "controller",
+    "restfull",
+    "api",
+    "mongodb"
+  ],
+  "author": "Mile Mijatović",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mijatovicmile/Node.js-MVC-RESTfull-API-MongoDB/issues"
+  },
+  "homepage": "https://github.com/mijatovicmile/Node.js-MVC-RESTfull-API-MongoDB#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.13"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10"
+  }
+}
