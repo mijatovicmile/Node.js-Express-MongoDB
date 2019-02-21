@@ -5,9 +5,11 @@ const bodyParser = require('body-parser');
 // The path module provides utilities for working with file and directory paths
 const path = require('path');
 // Import admin routes module in our app
-const adminData = require('./routes/admin');
+const adminRoutes = require('./routes/admin');
 // Import shop routes module in our app
 const shopRoutes = require('./routes/shop');
+// Import error controller, which we will use for Page Not Found (404)
+const errorController = require('./controllers/error');
 
 
 /**
@@ -45,18 +47,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
  * And not only that! Also , Express.js will also omit or ignore this "/admin" in the URL , 
  * when it tries to match path without "/admin" from the "../routes/admin" file
  */
-app.use('/admin', adminData.router);
+app.use('/admin', adminRoutes);
 
 // Register and use shop routes module in our application, which we defined in "../routes/shop"
 app.use(shopRoutes);
 
-// Adding a 404 Error Page (Page Not Found)
-app.use((req, res, next) => {
-    res.status(404).render('404', { 
-        pageTitle: 'Page Not Found',
-        pageId: 'pageNotFound'
-    });
-});
+// Adding a 404 Error Page (Page Not Found) with reference to the appropriate controller (errorController)
+app.use(errorController.error);
 
 const port = 3000;
 
