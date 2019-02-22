@@ -1,6 +1,23 @@
 const fs = require('fs');
 const path = require('path');
 
+const p = path.join(
+    path.dirname(process.mainModule.filename), 
+    'data', 
+    'products.json'
+);
+
+// Refactoring the file storage code
+const getProductsFromFile = callback => {
+    fs.readFile(p, (err, data) => {
+        if (err) {
+            callback([]);
+        } else {
+            callback(JSON.parse(data));
+        }
+    })
+}
+
 // In this class I want to find the shape of a single shop product
 module.exports = class Product {
     /**
@@ -20,19 +37,9 @@ module.exports = class Product {
      */
     save() {
         // Get the application path to the data folder, and product.json file into that folder
-        const p = path.join(
-            path.dirname(process.mainModule.filename), 
-            'data', 
-            'products.json'
-        );
-        fs.readFile(p, (err, data) => {
-            let products = [];
-            // If there is no error
-            if (!err) {
-                products = JSON.parse(data);
-            }
+        getProductsFromFile(products => {
             products.push(this);
-            fs.writeFile(p, JSON.stringify(products), (err) => {
+            fs.writeFile(p, JSON.stringify(products), err => {
                 console.log(err);
             });
         });
@@ -44,16 +51,6 @@ module.exports = class Product {
      * static -> make sure that I can call this method directly on the Product class itself and not on an instantiated object
      */
     static fetchAll(callback) {
-        const p = path.join(
-            path.dirname(process.mainModule.filename), 
-            'data', 
-            'products.json'
-        );
-        fs.readFile(p, (err, data) => {
-            if (err) {
-                callback([]);
-            }
-            callback(JSON.parse(data));
-        })
+        getProductsFromFile(callback);
     }
 }
