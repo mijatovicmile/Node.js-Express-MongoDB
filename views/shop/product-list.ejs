@@ -15,7 +15,9 @@
                             <div class="card-body">
                                 <p class="card-text price font-weight-bold"><%= product.price %> €</p>
                                 <p class="card-text description"><%= product.description %></p>
-                                <a href="#" class="btn btn-info">Add to Cart</a>
+                                <form action="/add-product-to-cart" method="POST">
+                                    <button type="submit" class="btn btn-info">Add to Cart</button>
+                                </form>
                             </div>
                         </div>
                    </div>

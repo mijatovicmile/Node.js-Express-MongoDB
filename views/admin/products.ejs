@@ -15,8 +15,12 @@
                             <div class="card-body">
                                 <p class="card-text price font-weight-bold"><%= product.price %> €</p>
                                 <p class="card-text description"><%= product.description %></p>
-                                <a href="/admin/edit-product" class="btn btn-warning">Edit</a>
-                                <a href="/"  class="btn btn-danger">Delete</a>
+                                <form action="/admin/edit-product" class="d-inline-block" method="POST">
+                                    <button type="submit" class="btn btn-warning">Edit</button>
+                                </form>
+                                <form action="/admin/delete-product" class="d-inline-block" method="POST">
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
                             </div>
                         </div>
                    </div>
