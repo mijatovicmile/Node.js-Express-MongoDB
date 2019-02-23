@@ -1,23 +1,6 @@
 // stylelint-disable declaration-no-important
 
 // Common values
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-
-// Sass list not in variables since it's not intended for customization.
-$positions: static, relative, absolute, fixed, sticky;
-
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 @each $position in $positions {
   .position-#{$position} { position: $position !important; }
 }

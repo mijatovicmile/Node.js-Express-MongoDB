@@ -1,18 +1,6 @@
 // Bootstrap functions
 //
-<<<<<<< HEAD
-<<<<<<< HEAD
 // Utility mixins and functions for evaluating source code across our variables, maps, and mixins.
-=======
-// Utility mixins and functions for evalutating source code across our variables, maps, and mixins.
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-// Utility mixins and functions for evalutating source code across our variables, maps, and mixins.
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 
 // Ascending
 // Used to evaluate Sass maps like our grid breakpoints.
@@ -20,19 +8,7 @@
   $prev-key: null;
   $prev-num: null;
   @each $key, $num in $map {
-<<<<<<< HEAD
-<<<<<<< HEAD
     @if $prev-num == null or unit($num) == "%" {
-=======
-    @if $prev-num == null {
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-    @if $prev-num == null {
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
       // Do nothing
     } @else if not comparable($prev-num, $num) {
       @warn "Potentially invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} whose unit makes it incomparable to #{$prev-num}, the value of the previous key '#{$prev-key}' !";
@@ -45,31 +21,12 @@
 }
 
 // Starts at zero
-<<<<<<< HEAD
-<<<<<<< HEAD
 // Used to ensure the min-width of the lowest breakpoint starts at 0.
 @mixin _assert-starts-at-zero($map, $map-name: "$grid-breakpoints") {
   $values: map-values($map);
   $first-value: nth($values, 1);
   @if $first-value != 0 {
     @warn "First breakpoint in #{$map-name} must start at 0, but starts at #{$first-value}.";
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-// Another grid mixin that ensures the min-width of the lowest breakpoint starts at 0.
-@mixin _assert-starts-at-zero($map) {
-  $values: map-values($map);
-  $first-value: nth($values, 1);
-  @if $first-value != 0 {
-    @warn "First breakpoint in `$grid-breakpoints` must start at 0, but starts at #{$first-value}.";
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 }
 
@@ -92,19 +49,7 @@
 }
 
 // Color contrast
-<<<<<<< HEAD
-<<<<<<< HEAD
 @function color-yiq($color, $dark: $yiq-text-dark, $light: $yiq-text-light) {
-=======
-@function color-yiq($color) {
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-@function color-yiq($color) {
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   $r: red($color);
   $g: green($color);
   $b: blue($color);
@@ -112,25 +57,9 @@
   $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
 
   @if ($yiq >= $yiq-contrasted-threshold) {
-<<<<<<< HEAD
-<<<<<<< HEAD
     @return $dark;
   } @else {
     @return $light;
-=======
-    @return $yiq-text-dark;
-  } @else {
-    @return $yiq-text-light;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-    @return $yiq-text-dark;
-  } @else {
-    @return $yiq-text-light;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 }
 
@@ -150,19 +79,7 @@
 // Request a theme color level
 @function theme-color-level($color-name: "primary", $level: 0) {
   $color: theme-color($color-name);
-<<<<<<< HEAD
-<<<<<<< HEAD
   $color-base: if($level > 0, $black, $white);
-=======
-  $color-base: if($level > 0, #000, #fff);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  $color-base: if($level > 0, #000, #fff);
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   $level: abs($level);
 
   @return mix($color-base, $color, $level * $theme-color-interval);

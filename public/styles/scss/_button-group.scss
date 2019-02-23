@@ -9,19 +9,7 @@
 
   > .btn {
     position: relative;
-<<<<<<< HEAD
-<<<<<<< HEAD
     flex: 1 1 auto;
-=======
-    flex: 0 1 auto;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-    flex: 0 1 auto;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 
     // Bring the hover, focused, and "active" buttons to the front to overlay
     // the borders properly
@@ -34,27 +22,6 @@
       z-index: 1;
     }
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-
-  // Prevent double borders when buttons are next to each other
-  .btn + .btn,
-  .btn + .btn-group,
-  .btn-group + .btn,
-  .btn-group + .btn-group {
-    margin-left: -$btn-border-width;
-  }
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 }
 
 // Optional: Group multiple button groups together for a toolbar
@@ -69,24 +36,10 @@
 }
 
 .btn-group {
-<<<<<<< HEAD
-<<<<<<< HEAD
   // Prevent double borders when buttons are next to each other
   > .btn:not(:first-child),
   > .btn-group:not(:first-child) {
     margin-left: -$btn-border-width;
-=======
-  > .btn:first-child {
-    margin-left: 0;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  > .btn:first-child {
-    margin-left: 0;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 
   // Reset rounded corners
@@ -117,8 +70,6 @@
   padding-right: $btn-padding-x * .75;
   padding-left: $btn-padding-x * .75;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   &::after,
   .dropup &::after,
   .dropright &::after {
@@ -128,20 +79,6 @@
   .dropleft &::before {
     margin-right: 0;
   }
-=======
-  &::after {
-    margin-left: 0;
-  }
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  &::after {
-    margin-left: 0;
-  }
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 }
 
 .btn-sm + .dropdown-toggle-split {
@@ -176,8 +113,6 @@
   align-items: flex-start;
   justify-content: center;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   > .btn,
   > .btn-group {
     width: 100%;
@@ -186,28 +121,6 @@
   > .btn:not(:first-child),
   > .btn-group:not(:first-child) {
     margin-top: -$btn-border-width;
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  .btn,
-  .btn-group {
-    width: 100%;
-  }
-
-  > .btn + .btn,
-  > .btn + .btn-group,
-  > .btn-group + .btn,
-  > .btn-group + .btn-group {
-    margin-top: -$btn-border-width;
-    margin-left: 0;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 
   // Reset rounded corners

@@ -1,63 +1,14 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 .fade {
   @include transition($transition-fade);
 
   &:not(.show) {
     opacity: 0;
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-// stylelint-disable selector-no-qualifying-type
-
-.fade {
-  opacity: 0;
-  @include transition($transition-fade);
-
-  &.show {
-    opacity: 1;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 }
 
 .collapse {
-<<<<<<< HEAD
-<<<<<<< HEAD
   &:not(.show) {
     display: none;
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  display: none;
-  &.show {
-    display: block;
-  }
-}
-
-tr {
-  &.collapse.show {
-    display: table-row;
-  }
-}
-
-tbody {
-  &.collapse.show {
-    display: table-row-group;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 }
 

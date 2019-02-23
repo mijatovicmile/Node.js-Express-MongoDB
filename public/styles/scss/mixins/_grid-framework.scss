@@ -8,24 +8,8 @@
   %grid-column {
     position: relative;
     width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
     padding-right: $gutter / 2;
     padding-left: $gutter / 2;
-=======
-    min-height: 1px; // Prevent columns from collapsing when empty
-    padding-right: ($gutter / 2);
-    padding-left: ($gutter / 2);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-    min-height: 1px; // Prevent columns from collapsing when empty
-    padding-right: ($gutter / 2);
-    padding-left: ($gutter / 2);
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 
   @each $breakpoint in map-keys($breakpoints) {
@@ -52,19 +36,7 @@
       .col#{$infix}-auto {
         flex: 0 0 auto;
         width: auto;
-<<<<<<< HEAD
-<<<<<<< HEAD
         max-width: 100%; // Reset earlier grid tiers
-=======
-        max-width: none; // Reset earlier grid tiers
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-        max-width: none; // Reset earlier grid tiers
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
       }
 
       @for $i from 1 through $columns {

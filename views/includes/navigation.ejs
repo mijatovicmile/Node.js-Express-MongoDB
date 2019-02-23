@@ -9,8 +9,17 @@
       <li class="<%= pageId  === '/' ? 'nav-item active' : 'nav-item' %>">
         <a class="nav-link" href="/">Shop</a>
       </li>
+      <li class="<%= pageId  === '/products' ? 'nav-item active' : 'nav-item' %>">
+        <a class="nav-link" href="/products">Products</a>
+      </li>
+      <li class="<%= pageId  === '/cart' ? 'nav-item active' : 'nav-item' %>">
+        <a class="nav-link" href="/cart">Cart</a>
+      </li>
       <li class="<%= pageId  === '/admin/add-product' ? 'nav-item active' : 'nav-item' %>">
         <a class="nav-link" href="/admin/add-product">Add Product</a>
+      </li>
+      <li class="<%= pageId  === '/admin/products' ? 'nav-item active' : 'nav-item' %>">
+        <a class="nav-link" href="/admin/products">Admin Products</a>
       </li>
     </ul>
   </div>

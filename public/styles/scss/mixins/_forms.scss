@@ -10,19 +10,7 @@
 //
 // Example usage: change the default blue border and shadow to white for better
 // contrast against a dark gray background.
-<<<<<<< HEAD
-<<<<<<< HEAD
-@mixin form-control-focus($ignore-warning: false) {
-=======
 @mixin form-control-focus() {
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-@mixin form-control-focus() {
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   &:focus {
     color: $input-focus-color;
     background-color: $input-focus-bg;
@@ -35,45 +23,15 @@
       box-shadow: $input-focus-box-shadow;
     }
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-  @include deprecate("The `form-control-focus()` mixin", "v4.3.2", "v5", $ignore-warning);
 }
 
 
 @mixin form-validation-state($state, $color, $icon) {
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-}
-
-
-@mixin form-validation-state($state, $color) {
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   .#{$state}-feedback {
     display: none;
     width: 100%;
     margin-top: $form-feedback-margin-top;
-<<<<<<< HEAD
-<<<<<<< HEAD
     @include font-size($form-feedback-font-size);
-=======
-    font-size: $form-feedback-font-size;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-    font-size: $form-feedback-font-size;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     color: $color;
   }
 
@@ -83,8 +41,6 @@
     z-index: 5;
     display: none;
     max-width: 100%; // Contain to parent when possible
-<<<<<<< HEAD
-<<<<<<< HEAD
     padding: $form-feedback-tooltip-padding-y $form-feedback-tooltip-padding-x;
     margin-top: .1rem;
     @include font-size($form-feedback-tooltip-font-size);
@@ -130,47 +86,16 @@
     }
   }
 
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-    padding: .5rem;
-    margin-top: .1rem;
-    font-size: .875rem;
-    line-height: 1;
-    color: #fff;
-    background-color: rgba($color, .8);
-    border-radius: .2rem;
-  }
-
-  .form-control,
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   .custom-select {
     .was-validated &:#{$state},
     &.is-#{$state} {
       border-color: $color;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
       @if $enable-validation-icons {
         padding-right: $custom-select-feedback-icon-padding-right;
         background: $custom-select-background, $icon $custom-select-bg no-repeat $custom-select-feedback-icon-position / $custom-select-feedback-icon-size;
       }
 
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
       &:focus {
         border-color: $color;
         box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
@@ -183,8 +108,6 @@
     }
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
   .form-control-file {
     .was-validated &:#{$state},
@@ -196,14 +119,6 @@
     }
   }
 
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   .form-check-input {
     .was-validated &:#{$state},
     &.is-#{$state} {
@@ -225,19 +140,7 @@
         color: $color;
 
         &::before {
-<<<<<<< HEAD
-<<<<<<< HEAD
           border-color: $color;
-=======
-          background-color: lighten($color, 25%);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-          background-color: lighten($color, 25%);
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
         }
       }
 
@@ -248,40 +151,18 @@
 
       &:checked {
         ~ .custom-control-label::before {
-<<<<<<< HEAD
-<<<<<<< HEAD
           border-color: lighten($color, 10%);
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
           @include gradient-bg(lighten($color, 10%));
         }
       }
 
       &:focus {
         ~ .custom-control-label::before {
-<<<<<<< HEAD
-<<<<<<< HEAD
           box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
         }
 
         &:not(:checked) ~ .custom-control-label::before {
           border-color: $color;
-=======
-          box-shadow: 0 0 0 1px $body-bg, 0 0 0 $input-focus-width rgba($color, .25);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-          box-shadow: 0 0 0 1px $body-bg, 0 0 0 $input-focus-width rgba($color, .25);
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
         }
       }
     }
@@ -293,20 +174,6 @@
     &.is-#{$state} {
       ~ .custom-file-label {
         border-color: $color;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-        &::before { border-color: inherit; }
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-
-        &::before { border-color: inherit; }
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
       }
 
       ~ .#{$state}-feedback,
@@ -316,17 +183,7 @@
 
       &:focus {
         ~ .custom-file-label {
-<<<<<<< HEAD
-<<<<<<< HEAD
           border-color: $color;
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
           box-shadow: 0 0 0 $input-focus-width rgba($color, .25);
         }
       }

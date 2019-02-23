@@ -24,19 +24,7 @@
   padding: $navbar-padding-y $navbar-padding-x;
 
   // Because flex properties aren't inherited, we need to redeclare these first
-<<<<<<< HEAD
-<<<<<<< HEAD
   // few properties so that content nested within behave properly.
-=======
-  // few properities so that content nested within behave properly.
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  // few properities so that content nested within behave properly.
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   > .container,
   > .container-fluid {
     display: flex;
@@ -56,19 +44,7 @@
   padding-top: $navbar-brand-padding-y;
   padding-bottom: $navbar-brand-padding-y;
   margin-right: $navbar-padding-x;
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include font-size($navbar-brand-font-size);
-=======
-  font-size: $navbar-brand-font-size;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  font-size: $navbar-brand-font-size;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   line-height: inherit;
   white-space: nowrap;
 
@@ -118,19 +94,7 @@
 // Powered by the collapse Bootstrap JavaScript plugin.
 
 // When collapsed, prevent the toggleable navbar contents from appearing in
-<<<<<<< HEAD
-<<<<<<< HEAD
 // the default flexbox row orientation. Requires the use of `flex-wrap: wrap`
-=======
-// the default flexbox row orienation. Requires the use of `flex-wrap: wrap`
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-// the default flexbox row orienation. Requires the use of `flex-wrap: wrap`
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 // on the `.navbar` parent.
 .navbar-collapse {
   flex-basis: 100%;
@@ -143,19 +107,7 @@
 // Button for toggling the navbar when in its collapsed state
 .navbar-toggler {
   padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include font-size($navbar-toggler-font-size);
-=======
-  font-size: $navbar-toggler-font-size;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  font-size: $navbar-toggler-font-size;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   line-height: 1;
   background-color: transparent; // remove default button style
   border: $border-width solid transparent; // remove default button style
@@ -164,24 +116,6 @@
   @include hover-focus {
     text-decoration: none;
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-
-  // Opinionated: add "hand" cursor to non-disabled .navbar-toggler elements
-  &:not(:disabled):not(.disabled) {
-    cursor: pointer;
-  }
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 }
 
 // Keep as a separate element so folks can easily override it with another icon
@@ -223,24 +157,6 @@
             position: absolute;
           }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-          .dropdown-menu-right {
-            right: 0;
-            left: auto; // Reset the default from `.dropdown-menu`
-          }
-
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
           .nav-link {
             padding-right: $navbar-nav-link-padding-x;
             padding-left: $navbar-nav-link-padding-x;
@@ -254,19 +170,7 @@
         }
 
         .navbar-collapse {
-<<<<<<< HEAD
-<<<<<<< HEAD
           display: flex !important; // stylelint-disable-line declaration-no-important
-=======
-          display: flex !important;  // stylelint-disable-line declaration-no-important
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-          display: flex !important;  // stylelint-disable-line declaration-no-important
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 
           // Changes flex-bases to auto because of an IE10 bug
           flex-basis: auto;
@@ -275,26 +179,6 @@
         .navbar-toggler {
           display: none;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-
-        .dropup {
-          .dropdown-menu {
-            top: auto;
-            bottom: 100%;
-          }
-        }
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
       }
     }
   }
@@ -308,27 +192,10 @@
 // Dark links against a light background
 .navbar-light {
   .navbar-brand {
-<<<<<<< HEAD
-<<<<<<< HEAD
     color: $navbar-light-brand-color;
 
     @include hover-focus {
       color: $navbar-light-brand-hover-color;
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-    color: $navbar-light-active-color;
-
-    @include hover-focus {
-      color: $navbar-light-active-color;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     }
   }
 
@@ -377,27 +244,10 @@
 // White links against a dark background
 .navbar-dark {
   .navbar-brand {
-<<<<<<< HEAD
-<<<<<<< HEAD
     color: $navbar-dark-brand-color;
 
     @include hover-focus {
       color: $navbar-dark-brand-hover-color;
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-    color: $navbar-dark-active-color;
-
-    @include hover-focus {
-      color: $navbar-dark-active-color;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     }
   }
 

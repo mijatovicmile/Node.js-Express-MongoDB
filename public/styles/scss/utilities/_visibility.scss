@@ -1,41 +1,13 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 // stylelint-disable declaration-no-important
 
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 //
 // Visibility utilities
 //
 
 .visible {
-<<<<<<< HEAD
-<<<<<<< HEAD
   visibility: visible !important;
 }
 
 .invisible {
   visibility: hidden !important;
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  @include invisible(visible);
-}
-
-.invisible {
-  @include invisible(hidden);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 }

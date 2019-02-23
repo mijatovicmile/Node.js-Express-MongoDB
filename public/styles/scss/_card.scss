@@ -6,19 +6,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-<<<<<<< HEAD
   min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
-=======
-  min-width: 0;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  min-width: 0;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   word-wrap: break-word;
   background-color: $card-bg;
   background-clip: border-box;
@@ -48,17 +36,7 @@
   // as much space as possible, ensuring footers are aligned to the bottom.
   flex: 1 1 auto;
   padding: $card-spacer-x;
-<<<<<<< HEAD
-<<<<<<< HEAD
   color: $card-color;
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 }
 
 .card-title {
@@ -66,19 +44,7 @@
 }
 
 .card-subtitle {
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-top: -$card-spacer-y / 2;
-=======
-  margin-top: -($card-spacer-y / 2);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  margin-top: -($card-spacer-y / 2);
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   margin-bottom: 0;
 }
 
@@ -103,17 +69,7 @@
 .card-header {
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
-<<<<<<< HEAD
-<<<<<<< HEAD
   color: $card-cap-color;
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   background-color: $card-cap-bg;
   border-bottom: $card-border-width solid $card-border-color;
 
@@ -144,45 +100,15 @@
 //
 
 .card-header-tabs {
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-right: -$card-spacer-x / 2;
   margin-bottom: -$card-spacer-y;
   margin-left: -$card-spacer-x / 2;
-=======
-  margin-right: -($card-spacer-x / 2);
-  margin-bottom: -$card-spacer-y;
-  margin-left: -($card-spacer-x / 2);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  margin-right: -($card-spacer-x / 2);
-  margin-bottom: -$card-spacer-y;
-  margin-left: -($card-spacer-x / 2);
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   border-bottom: 0;
 }
 
 .card-header-pills {
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-right: -$card-spacer-x / 2;
   margin-left: -$card-spacer-x / 2;
-=======
-  margin-right: -($card-spacer-x / 2);
-  margin-left: -($card-spacer-x / 2);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  margin-right: -($card-spacer-x / 2);
-  margin-left: -($card-spacer-x / 2);
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 }
 
 // Card image
@@ -229,19 +155,7 @@
 
     .card {
       display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
       // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
-=======
-      // Flexbugs #4: https://github.com/philipwalton/flexbugs#4-flex-shorthand-declarations-with-unitless-flex-basis-values-are-ignored
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-      // Flexbugs #4: https://github.com/philipwalton/flexbugs#4-flex-shorthand-declarations-with-unitless-flex-basis-values-are-ignored
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
       flex: 1 0 0%;
       flex-direction: column;
       margin-right: $card-deck-margin;
@@ -271,19 +185,7 @@
     // The child selector allows nested `.card` within `.card-group`
     // to display properly.
     > .card {
-<<<<<<< HEAD
-<<<<<<< HEAD
       // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
-=======
-      // Flexbugs #4: https://github.com/philipwalton/flexbugs#4-flex-shorthand-declarations-with-unitless-flex-basis-values-are-ignored
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-      // Flexbugs #4: https://github.com/philipwalton/flexbugs#4-flex-shorthand-declarations-with-unitless-flex-basis-values-are-ignored
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
       flex: 1 0 0%;
       margin-bottom: 0;
 
@@ -294,129 +196,35 @@
 
       // Handle rounded corners
       @if $enable-rounded {
-<<<<<<< HEAD
-<<<<<<< HEAD
         &:not(:last-child) {
-=======
-        &:first-child {
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-        &:first-child {
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
           @include border-right-radius(0);
 
           .card-img-top,
           .card-header {
-<<<<<<< HEAD
-<<<<<<< HEAD
             // stylelint-disable-next-line property-blacklist
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
             border-top-right-radius: 0;
           }
           .card-img-bottom,
           .card-footer {
-<<<<<<< HEAD
-<<<<<<< HEAD
             // stylelint-disable-next-line property-blacklist
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
             border-bottom-right-radius: 0;
           }
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         &:not(:first-child) {
-=======
-        &:last-child {
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-        &:last-child {
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
           @include border-left-radius(0);
 
           .card-img-top,
           .card-header {
-<<<<<<< HEAD
-<<<<<<< HEAD
             // stylelint-disable-next-line property-blacklist
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
             border-top-left-radius: 0;
           }
           .card-img-bottom,
           .card-footer {
-<<<<<<< HEAD
-<<<<<<< HEAD
             // stylelint-disable-next-line property-blacklist
             border-bottom-left-radius: 0;
           }
         }
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-            border-bottom-left-radius: 0;
-          }
-        }
-
-        &:only-child {
-          @include border-radius($card-border-radius);
-
-          .card-img-top,
-          .card-header {
-            @include border-top-radius($card-border-radius);
-          }
-          .card-img-bottom,
-          .card-footer {
-            @include border-bottom-radius($card-border-radius);
-          }
-        }
-
-        &:not(:first-child):not(:last-child):not(:only-child) {
-          @include border-radius(0);
-
-          .card-img-top,
-          .card-img-bottom,
-          .card-header,
-          .card-footer {
-            @include border-radius(0);
-          }
-        }
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
       }
     }
   }
@@ -435,18 +243,8 @@
   @include media-breakpoint-up(sm) {
     column-count: $card-columns-count;
     column-gap: $card-columns-gap;
-<<<<<<< HEAD
-<<<<<<< HEAD
     orphans: 1;
     widows: 1;
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 
     .card {
       display: inline-block; // Don't let them vertically span multiple columns
@@ -454,8 +252,6 @@
     }
   }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
 //
@@ -491,11 +287,3 @@
     }
   }
 }
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase

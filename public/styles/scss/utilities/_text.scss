@@ -4,28 +4,12 @@
 // Text
 //
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .text-monospace { font-family: $font-family-monospace !important; }
 
 // Alignment
 
 .text-justify  { text-align: justify !important; }
 .text-wrap     { white-space: normal !important; }
-=======
-// Alignment
-
-.text-justify  { text-align: justify !important; }
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-// Alignment
-
-.text-justify  { text-align: justify !important; }
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 .text-nowrap   { white-space: nowrap !important; }
 .text-truncate { @include text-truncate; }
 
@@ -49,8 +33,6 @@
 
 // Weight and italics
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .font-weight-light   { font-weight: $font-weight-light !important; }
 .font-weight-lighter { font-weight: $font-weight-lighter !important; }
 .font-weight-normal  { font-weight: $font-weight-normal !important; }
@@ -61,32 +43,11 @@
 // Contextual colors
 
 .text-white { color: $white !important; }
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-.font-weight-light  { font-weight: $font-weight-light !important; }
-.font-weight-normal { font-weight: $font-weight-normal !important; }
-.font-weight-bold   { font-weight: $font-weight-bold !important; }
-.font-italic        { font-style: italic !important; }
-
-// Contextual colors
-
-.text-white { color: #fff !important; }
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 
 @each $color, $value in $theme-colors {
   @include text-emphasis-variant(".text-#{$color}", $value);
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .text-body { color: $body-color !important; }
 .text-muted { color: $text-muted !important; }
 
@@ -109,21 +70,3 @@
 // Reset
 
 .text-reset { color: inherit !important; }
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-.text-muted { color: $text-muted !important; }
-
-// Misc
-
-.text-hide {
-  @include text-hide();
-}
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase

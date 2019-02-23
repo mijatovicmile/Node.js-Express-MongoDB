@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 // stylelint-disable property-blacklist, declaration-no-important
-=======
-// stylelint-disable declaration-no-important
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-// stylelint-disable declaration-no-important
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 
 //
 // Border
@@ -42,8 +30,6 @@
 // Border-radius
 //
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .rounded-sm {
   border-radius: $border-radius-sm !important;
 }
@@ -52,102 +38,38 @@
   border-radius: $border-radius !important;
 }
 
-=======
-.rounded {
-  border-radius: $border-radius !important;
-}
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-.rounded {
-  border-radius: $border-radius !important;
-}
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 .rounded-top {
   border-top-left-radius: $border-radius !important;
   border-top-right-radius: $border-radius !important;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 .rounded-right {
   border-top-right-radius: $border-radius !important;
   border-bottom-right-radius: $border-radius !important;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 .rounded-bottom {
   border-bottom-right-radius: $border-radius !important;
   border-bottom-left-radius: $border-radius !important;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 .rounded-left {
   border-top-left-radius: $border-radius !important;
   border-bottom-left-radius: $border-radius !important;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .rounded-lg {
   border-radius: $border-radius-lg !important;
 }
 
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 .rounded-circle {
   border-radius: 50% !important;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .rounded-pill {
   border-radius: $rounded-pill !important;
 }
 
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 .rounded-0 {
   border-radius: 0 !important;
 }

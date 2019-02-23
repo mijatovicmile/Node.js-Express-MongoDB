@@ -7,25 +7,11 @@
 .form-control {
   display: block;
   width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   height: $input-height;
   padding: $input-padding-y $input-padding-x;
   font-family: $input-font-family;
   @include font-size($input-font-size);
   font-weight: $input-font-weight;
-=======
-  padding: $input-padding-y $input-padding-x;
-  font-size: $font-size-base;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  padding: $input-padding-y $input-padding-x;
-  font-size: $font-size-base;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   line-height: $input-line-height;
   color: $input-color;
   background-color: $input-bg;
@@ -33,27 +19,7 @@
   border: $input-border-width solid $input-border-color;
 
   // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include border-radius($input-border-radius, 0);
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  @if $enable-rounded {
-    // Manually use the if/else instead of the mixin to account for iOS override
-    border-radius: $input-border-radius;
-  } @else {
-    // Otherwise undo the iOS default
-    border-radius: 0;
-  }
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 
   @include box-shadow($input-box-shadow);
   @include transition($input-transition);
@@ -65,19 +31,7 @@
   }
 
   // Customize the `:focus` state to imitate native WebKit styles.
-<<<<<<< HEAD
-<<<<<<< HEAD
-  @include form-control-focus($ignore-warning: true);
-=======
   @include form-control-focus();
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  @include form-control-focus();
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 
   // Placeholder
   &::placeholder {
@@ -100,23 +54,6 @@
 }
 
 select.form-control {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  &:not([size]):not([multiple]) {
-    height: $input-height;
-  }
-
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   &:focus::-ms-value {
     // Suppress the nested default white text on blue background highlight given to
     // the selected option text when the (still closed) <select> receives focus
@@ -146,57 +83,21 @@ select.form-control {
   padding-top: calc(#{$input-padding-y} + #{$input-border-width});
   padding-bottom: calc(#{$input-padding-y} + #{$input-border-width});
   margin-bottom: 0; // Override the `<label>/<legend>` default
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include font-size(inherit); // Override the `<legend>` default
-=======
-  font-size: inherit; // Override the `<legend>` default
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  font-size: inherit; // Override the `<legend>` default
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   line-height: $input-line-height;
 }
 
 .col-form-label-lg {
   padding-top: calc(#{$input-padding-y-lg} + #{$input-border-width});
   padding-bottom: calc(#{$input-padding-y-lg} + #{$input-border-width});
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include font-size($input-font-size-lg);
-=======
-  font-size: $font-size-lg;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  font-size: $font-size-lg;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   line-height: $input-line-height-lg;
 }
 
 .col-form-label-sm {
   padding-top: calc(#{$input-padding-y-sm} + #{$input-border-width});
   padding-bottom: calc(#{$input-padding-y-sm} + #{$input-border-width});
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include font-size($input-font-size-sm);
-=======
-  font-size: $font-size-sm;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  font-size: $font-size-sm;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   line-height: $input-line-height-sm;
 }
 
@@ -213,17 +114,7 @@ select.form-control {
   padding-bottom: $input-padding-y;
   margin-bottom: 0; // match inputs if this class comes on inputs with default margins
   line-height: $input-line-height;
-<<<<<<< HEAD
-<<<<<<< HEAD
   color: $input-plaintext-color;
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   background-color: transparent;
   border: solid transparent;
   border-width: $input-border-width 0;
@@ -241,67 +132,24 @@ select.form-control {
 // Build on `.form-control` with modifier classes to decrease or increase the
 // height and font-size of form controls.
 //
-<<<<<<< HEAD
-<<<<<<< HEAD
 // Repeated in `_input_group.scss` to avoid Sass extend issues.
 
 .form-control-sm {
   height: $input-height-sm;
   padding: $input-padding-y-sm $input-padding-x-sm;
   @include font-size($input-font-size-sm);
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-// The `.form-group-* form-control` variations are sadly duplicated to avoid the
-// issue documented in https://github.com/twbs/bootstrap/issues/15074.
-
-.form-control-sm {
-  padding: $input-padding-y-sm $input-padding-x-sm;
-  font-size: $font-size-sm;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   line-height: $input-line-height-sm;
   @include border-radius($input-border-radius-sm);
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .form-control-lg {
   height: $input-height-lg;
   padding: $input-padding-y-lg $input-padding-x-lg;
   @include font-size($input-font-size-lg);
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-select.form-control-sm {
-  &:not([size]):not([multiple]) {
-    height: $input-height-sm;
-  }
-}
-
-.form-control-lg {
-  padding: $input-padding-y-lg $input-padding-x-lg;
-  font-size: $font-size-lg;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   line-height: $input-line-height-lg;
   @include border-radius($input-border-radius-lg);
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 // stylelint-disable-next-line no-duplicate-selectors
 select.form-control {
   &[size],
@@ -313,23 +161,6 @@ select.form-control {
 textarea.form-control {
   height: auto;
 }
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-select.form-control-lg {
-  &:not([size]):not([multiple]) {
-    height: $input-height-lg;
-  }
-}
-
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 
 // Form groups
 //
@@ -353,8 +184,6 @@ select.form-control-lg {
 .form-row {
   display: flex;
   flex-wrap: wrap;
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-right: -$form-grid-gutter-width / 2;
   margin-left: -$form-grid-gutter-width / 2;
 
@@ -362,24 +191,6 @@ select.form-control-lg {
   > [class*="col-"] {
     padding-right: $form-grid-gutter-width / 2;
     padding-left: $form-grid-gutter-width / 2;
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  margin-right: -5px;
-  margin-left: -5px;
-
-  > .col,
-  > [class*="col-"] {
-    padding-right: 5px;
-    padding-left: 5px;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 }
 
@@ -431,23 +242,9 @@ select.form-control-lg {
 // pseudo-classes but also includes `.is-invalid` and `.is-valid` classes for
 // server side validation.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 @each $state, $data in $form-validation-states {
   @include form-validation-state($state, map-get($data, color), map-get($data, icon));
 }
-=======
-@include form-validation-state("valid", $form-feedback-valid-color);
-@include form-validation-state("invalid", $form-feedback-invalid-color);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-@include form-validation-state("valid", $form-feedback-valid-color);
-@include form-validation-state("invalid", $form-feedback-invalid-color);
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 
 // Inline forms
 //
@@ -500,20 +297,8 @@ select.form-control-lg {
       display: inline-block;
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     .input-group,
     .custom-select {
-=======
-    .input-group {
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-    .input-group {
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
       width: auto;
     }
 
@@ -528,17 +313,7 @@ select.form-control-lg {
     }
     .form-check-input {
       position: relative;
-<<<<<<< HEAD
-<<<<<<< HEAD
       flex-shrink: 0;
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
       margin-top: 0;
       margin-right: $form-check-input-margin-x;
       margin-left: 0;

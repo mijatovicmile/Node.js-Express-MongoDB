@@ -1,36 +1,14 @@
 // The dropdown wrapper (`<div>`)
 .dropup,
-<<<<<<< HEAD
-<<<<<<< HEAD
 .dropright,
 .dropdown,
 .dropleft {
-=======
-.dropdown {
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-.dropdown {
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   position: relative;
 }
 
 .dropdown-toggle {
-<<<<<<< HEAD
-<<<<<<< HEAD
   white-space: nowrap;
 
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   // Generate the caret automatically
   @include caret;
 }
@@ -46,22 +24,8 @@
   min-width: $dropdown-min-width;
   padding: $dropdown-padding-y 0;
   margin: $dropdown-spacer 0 0; // override default ul
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include font-size($dropdown-font-size);
   color: $dropdown-color;
-=======
-  font-size: $font-size-base; // Redeclare because nesting can cause inheritance issues
-  color: $body-color;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  font-size: $font-size-base; // Redeclare because nesting can cause inheritance issues
-  color: $body-color;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   list-style: none;
   background-color: $dropdown-bg;
@@ -71,8 +35,6 @@
   @include box-shadow($dropdown-box-shadow);
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
@@ -89,30 +51,12 @@
   }
 }
 
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 // Allow for dropdowns to go bottom up (aka, dropup-menu)
 // Just add .dropup after the standard .dropdown class and you're set.
 .dropup {
   .dropdown-menu {
-<<<<<<< HEAD
-<<<<<<< HEAD
     top: auto;
     bottom: 100%;
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     margin-top: 0;
     margin-bottom: $dropdown-spacer;
   }
@@ -124,19 +68,9 @@
 
 .dropright {
   .dropdown-menu {
-<<<<<<< HEAD
-<<<<<<< HEAD
     top: 0;
     right: auto;
     left: 100%;
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     margin-top: 0;
     margin-left: $dropdown-spacer;
   }
@@ -151,19 +85,9 @@
 
 .dropleft {
   .dropdown-menu {
-<<<<<<< HEAD
-<<<<<<< HEAD
     top: 0;
     right: 100%;
     left: auto;
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     margin-top: 0;
     margin-right: $dropdown-spacer;
   }
@@ -176,8 +100,6 @@
   }
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 // When enabled Popper.js, reset basic dropdown position
 // stylelint-disable-next-line no-duplicate-selectors
 .dropdown-menu {
@@ -193,20 +115,6 @@
 // Dividers (basically an `<hr>`) within the dropdown
 .dropdown-divider {
   @include nav-divider($dropdown-divider-bg, $dropdown-divider-margin-y);
-=======
-// Dividers (basically an `<hr>`) within the dropdown
-.dropdown-divider {
-  @include nav-divider($dropdown-divider-bg);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-// Dividers (basically an `<hr>`) within the dropdown
-.dropdown-divider {
-  @include nav-divider($dropdown-divider-bg);
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 }
 
 // Links, buttons, and more within the dropdown menu
@@ -224,8 +132,6 @@
   background-color: transparent; // For `<button>`s
   border: 0; // For `<button>`s
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   // Prevent dropdown overflow if there's no padding
   // See https://github.com/twbs/bootstrap/pull/27703
   @if $dropdown-padding-y == 0 {
@@ -238,14 +144,6 @@
     }
   }
 
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   @include hover-focus {
     color: $dropdown-link-hover-color;
     text-decoration: none;
@@ -262,17 +160,7 @@
   &.disabled,
   &:disabled {
     color: $dropdown-link-disabled-color;
-<<<<<<< HEAD
-<<<<<<< HEAD
     pointer-events: none;
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     background-color: transparent;
     // Remove CSS gradients if they're enabled
     @if $enable-gradients {
@@ -290,8 +178,6 @@
   display: block;
   padding: $dropdown-padding-y $dropdown-item-padding-x;
   margin-bottom: 0; // for use with heading elements
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include font-size($font-size-sm);
   color: $dropdown-header-color;
   white-space: nowrap; // as with > li > a
@@ -303,18 +189,3 @@
   padding: $dropdown-item-padding-y $dropdown-item-padding-x;
   color: $dropdown-link-color;
 }
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  font-size: $font-size-sm;
-  color: $dropdown-header-color;
-  white-space: nowrap; // as with > li > a
-}
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase

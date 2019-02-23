@@ -19,25 +19,9 @@
   &.focus {
     // Avoid using mixin so we can pass custom focus shadow properly
     @if $enable-shadows {
-<<<<<<< HEAD
-<<<<<<< HEAD
       box-shadow: $btn-box-shadow, 0 0 0 $btn-focus-width rgba(mix(color-yiq($background), $border, 15%), .5);
     } @else {
       box-shadow: 0 0 0 $btn-focus-width rgba(mix(color-yiq($background), $border, 15%), .5);
-=======
-      box-shadow: $btn-box-shadow, 0 0 0 $btn-focus-width rgba($border, .5);
-    } @else {
-      box-shadow: 0 0 0 $btn-focus-width rgba($border, .5);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-      box-shadow: $btn-box-shadow, 0 0 0 $btn-focus-width rgba($border, .5);
-    } @else {
-      box-shadow: 0 0 0 $btn-focus-width rgba($border, .5);
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     }
   }
 
@@ -47,20 +31,10 @@
     color: color-yiq($background);
     background-color: $background;
     border-color: $border;
-<<<<<<< HEAD
-<<<<<<< HEAD
     // Remove CSS gradients if they're enabled
     @if $enable-gradients {
       background-image: none;
     }
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 
   &:not(:disabled):not(.disabled):active,
@@ -75,27 +49,10 @@
 
     &:focus {
       // Avoid using mixin so we can pass custom focus shadow properly
-<<<<<<< HEAD
-<<<<<<< HEAD
       @if $enable-shadows and $btn-active-box-shadow != none {
         box-shadow: $btn-active-box-shadow, 0 0 0 $btn-focus-width rgba(mix(color-yiq($background), $border, 15%), .5);
       } @else {
         box-shadow: 0 0 0 $btn-focus-width rgba(mix(color-yiq($background), $border, 15%), .5);
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-      @if $enable-shadows {
-        box-shadow: $btn-active-box-shadow, 0 0 0 $btn-focus-width rgba($border, .5);
-      } @else {
-        box-shadow: 0 0 0 $btn-focus-width rgba($border, .5);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
       }
     }
   }
@@ -103,27 +60,9 @@
 
 @mixin button-outline-variant($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
   color: $color;
-<<<<<<< HEAD
-<<<<<<< HEAD
   border-color: $color;
 
   @include hover {
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  background-color: transparent;
-  background-image: none;
-  border-color: $color;
-
-  &:hover {
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     color: $color-hover;
     background-color: $active-background;
     border-color: $active-border;
@@ -161,29 +100,8 @@
 // Button sizes
 @mixin button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
   padding: $padding-y $padding-x;
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include font-size($font-size);
   line-height: $line-height;
   // Manually declare to provide an override to the browser default
   @include border-radius($border-radius, 0);
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  font-size: $font-size;
-  line-height: $line-height;
-  // Manually declare to provide an override to the browser default
-  @if $enable-rounded {
-    border-radius: $border-radius;
-  } @else {
-    border-radius: 0;
-  }
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 }

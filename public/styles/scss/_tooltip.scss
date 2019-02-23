@@ -7,19 +7,7 @@
   // Our parent element can be arbitrary since tooltips are by default inserted as a sibling of their target element.
   // So reset our font and text properties to avoid inheriting weird values.
   @include reset-text();
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include font-size($tooltip-font-size);
-=======
-  font-size: $tooltip-font-size;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  font-size: $tooltip-font-size;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   // Allow breaking very long words so they don't overflow the tooltip's bounds
   word-wrap: break-word;
   opacity: 0;

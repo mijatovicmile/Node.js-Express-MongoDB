@@ -2,27 +2,10 @@
 //
 // Generate semantic grid columns with these mixins.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 @mixin make-container($gutter: $grid-gutter-width) {
   width: 100%;
   padding-right: $gutter / 2;
   padding-left: $gutter / 2;
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-@mixin make-container() {
-  width: 100%;
-  padding-right: ($grid-gutter-width / 2);
-  padding-left: ($grid-gutter-width / 2);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   margin-right: auto;
   margin-left: auto;
 }
@@ -37,8 +20,6 @@
   }
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 @mixin make-row($gutter: $grid-gutter-width) {
   display: flex;
   flex-wrap: wrap;
@@ -47,48 +28,13 @@
 }
 
 @mixin make-col-ready($gutter: $grid-gutter-width) {
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-@mixin make-row() {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: ($grid-gutter-width / -2);
-  margin-left: ($grid-gutter-width / -2);
-}
-
-@mixin make-col-ready() {
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   position: relative;
   // Prevent columns from becoming too narrow when at smaller grid tiers by
   // always setting `width: 100%;`. This works because we use `flex` values
   // later on to override this initial width.
   width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   padding-right: $gutter / 2;
   padding-left: $gutter / 2;
-=======
-  min-height: 1px; // Prevent collapsing
-  padding-right: ($grid-gutter-width / 2);
-  padding-left: ($grid-gutter-width / 2);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  min-height: 1px; // Prevent collapsing
-  padding-right: ($grid-gutter-width / 2);
-  padding-left: ($grid-gutter-width / 2);
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 }
 
 @mixin make-col($size, $columns: $grid-columns) {

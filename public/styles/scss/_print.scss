@@ -5,19 +5,7 @@
 // ==========================================================================
 // Print styles.
 // Inlined to avoid the additional HTTP request:
-<<<<<<< HEAD
-<<<<<<< HEAD
 // https://www.phpied.com/delay-loading-your-print-css/
-=======
-// http://www.phpied.com/delay-loading-your-print-css/
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-// http://www.phpied.com/delay-loading-your-print-css/
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 // ==========================================================================
 
 @if $enable-print-styles {
@@ -26,19 +14,7 @@
     *::before,
     *::after {
       // Bootstrap specific; comment out `color` and `background`
-<<<<<<< HEAD
-<<<<<<< HEAD
       //color: $black !important; // Black prints faster
-=======
-      //color: #000 !important; // Black prints faster: http://www.sanbeiji.com/archives/953
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-      //color: #000 !important; // Black prints faster: http://www.sanbeiji.com/archives/953
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
       text-shadow: none !important;
       //background: transparent !important;
       box-shadow: none !important;
@@ -75,19 +51,7 @@
     }
     pre,
     blockquote {
-<<<<<<< HEAD
-<<<<<<< HEAD
       border: $border-width solid $gray-500; // Bootstrap custom code; using `$border-width` instead of 1px
-=======
-      border: $border-width solid #999;   // Bootstrap custom code; using `$border-width` instead of 1px
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-      border: $border-width solid #999;   // Bootstrap custom code; using `$border-width` instead of 1px
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
       page-break-inside: avoid;
     }
 
@@ -137,19 +101,7 @@
       display: none;
     }
     .badge {
-<<<<<<< HEAD
-<<<<<<< HEAD
       border: $border-width solid $black;
-=======
-      border: $border-width solid #000;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-      border: $border-width solid #000;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     }
 
     .table {
@@ -157,8 +109,6 @@
 
       td,
       th {
-<<<<<<< HEAD
-<<<<<<< HEAD
         background-color: $white !important;
       }
     }
@@ -186,27 +136,6 @@
       border-color: $table-border-color;
     }
 
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-        background-color: #fff !important;
-      }
-    }
-    .table-bordered {
-      th,
-      td {
-        border: 1px solid #ddd !important;
-      }
-    }
-
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     // Bootstrap specific changes end
   }
 }

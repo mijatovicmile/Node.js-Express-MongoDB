@@ -1,26 +1,12 @@
 .close {
   float: right;
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include font-size($close-font-size);
-=======
-  font-size: $close-font-size;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  font-size: $close-font-size;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   font-weight: $close-font-weight;
   line-height: 1;
   color: $close-color;
   text-shadow: $close-text-shadow;
   opacity: .5;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   // Override <a>'s hover style
   @include hover {
     color: $close-color;
@@ -31,26 +17,6 @@
     @include hover-focus {
       opacity: .75;
     }
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  @include hover-focus {
-    color: $close-color;
-    text-decoration: none;
-    opacity: .75;
-  }
-
-  // Opinionated: add "hand" cursor to non-disabled .close elements
-  &:not(:disabled):not(.disabled) {
-    cursor: pointer;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 }
 
@@ -59,25 +25,11 @@
 // If you want the anchor version, it requires `href="#"`.
 // See https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 // stylelint-disable-next-line selector-no-qualifying-type
-=======
-// stylelint-disable property-no-vendor-prefix, selector-no-qualifying-type
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-// stylelint-disable property-no-vendor-prefix, selector-no-qualifying-type
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 button.close {
   padding: 0;
   background-color: transparent;
   border: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
   appearance: none;
 }
 
@@ -87,17 +39,3 @@ button.close {
 a.close.disabled {
   pointer-events: none;
 }
-=======
-  -webkit-appearance: none;
-}
-// stylelint-enable
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  -webkit-appearance: none;
-}
-// stylelint-enable
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase

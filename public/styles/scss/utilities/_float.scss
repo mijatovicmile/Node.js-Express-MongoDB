@@ -1,37 +1,11 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 // stylelint-disable declaration-no-important
 
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     .float#{$infix}-left  { float: left !important; }
     .float#{$infix}-right { float: right !important; }
     .float#{$infix}-none  { float: none !important; }
-=======
-    .float#{$infix}-left  { @include float-left; }
-    .float#{$infix}-right { @include float-right; }
-    .float#{$infix}-none  { @include float-none; }
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-    .float#{$infix}-left  { @include float-left; }
-    .float#{$infix}-right { @include float-right; }
-    .float#{$infix}-none  { @include float-none; }
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 }

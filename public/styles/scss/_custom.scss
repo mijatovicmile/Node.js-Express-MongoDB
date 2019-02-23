@@ -1,3 +1,6 @@
-#product-description {
-    min-height: 250px;
+.card {
+    .price {
+        @include font-size($h4-font-size);
+        line-height: $headings-line-height;
+    }
 }

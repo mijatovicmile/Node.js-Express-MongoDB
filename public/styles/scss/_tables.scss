@@ -4,22 +4,8 @@
 
 .table {
   width: 100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-bottom: $spacer;
   color: $table-color;
-=======
-  max-width: 100%;
-  margin-bottom: $spacer;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  max-width: 100%;
-  margin-bottom: $spacer;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   background-color: $table-bg; // Reset for nesting within parents with `background-color`.
 
   th,
@@ -37,23 +23,6 @@
   tbody + tbody {
     border-top: (2 * $table-border-width) solid $table-border-color;
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-
-  .table {
-    background-color: $body-bg;
-  }
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 }
 
 
@@ -69,25 +38,9 @@
 }
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 // Border versions
 //
 // Add or remove borders all around the table and between all the columns.
-=======
-// Bordered version
-//
-// Add borders all around the table and between all the columns.
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-// Bordered version
-//
-// Add borders all around the table and between all the columns.
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 
 .table-bordered {
   border: $table-border-width solid $table-border-color;
@@ -100,25 +53,11 @@
   thead {
     th,
     td {
-<<<<<<< HEAD
-<<<<<<< HEAD
       border-bottom-width: 2 * $table-border-width;
-=======
-      border-bottom-width: (2 * $table-border-width);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-      border-bottom-width: (2 * $table-border-width);
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     }
   }
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .table-borderless {
   th,
   td,
@@ -127,33 +66,13 @@
     border: 0;
   }
 }
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 
 // Zebra-striping
 //
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
 
 .table-striped {
-<<<<<<< HEAD
-<<<<<<< HEAD
   tbody tr:nth-of-type(#{$table-striped-order}) {
-=======
-  tbody tr:nth-of-type(odd) {
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  tbody tr:nth-of-type(odd) {
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     background-color: $table-accent-bg;
   }
 }
@@ -166,17 +85,7 @@
 .table-hover {
   tbody tr {
     @include hover {
-<<<<<<< HEAD
-<<<<<<< HEAD
       color: $table-hover-color;
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
       background-color: $table-hover-bg;
     }
   }
@@ -189,19 +98,7 @@
 // inheritance to nested tables.
 
 @each $color, $value in $theme-colors {
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include table-row-variant($color, theme-color-level($color, $table-bg-level), theme-color-level($color, $table-border-level));
-=======
-  @include table-row-variant($color, theme-color-level($color, -9));
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  @include table-row-variant($color, theme-color-level($color, -9));
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 }
 
 @include table-row-variant(active, $table-active-bg);
@@ -253,17 +150,7 @@
   &.table-hover {
     tbody tr {
       @include hover {
-<<<<<<< HEAD
-<<<<<<< HEAD
         color: $table-dark-hover-color;
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
         background-color: $table-dark-hover-bg;
       }
     }
@@ -287,18 +174,6 @@
         width: 100%;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        -ms-overflow-style: -ms-autohiding-scrollbar; // See https://github.com/twbs/bootstrap/pull/10057
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-        -ms-overflow-style: -ms-autohiding-scrollbar; // See https://github.com/twbs/bootstrap/pull/10057
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 
         // Prevent double border on horizontal scroll due to use of `display: block;`
         > .table-bordered {

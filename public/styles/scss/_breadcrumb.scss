@@ -5,25 +5,11 @@
   margin-bottom: $breadcrumb-margin-bottom;
   list-style: none;
   background-color: $breadcrumb-bg;
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include border-radius($breadcrumb-border-radius);
-=======
-  @include border-radius($border-radius);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  @include border-radius($border-radius);
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 }
 
 .breadcrumb-item {
   // The separator between breadcrumbs (by default, a forward-slash: "/")
-<<<<<<< HEAD
-<<<<<<< HEAD
   + .breadcrumb-item {
     padding-left: $breadcrumb-item-padding;
 
@@ -33,23 +19,6 @@
       color: $breadcrumb-divider-color;
       content: $breadcrumb-divider;
     }
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  + .breadcrumb-item::before {
-    display: inline-block; // Suppress underlining of the separator in modern browsers
-    padding-right: $breadcrumb-item-padding;
-    padding-left: $breadcrumb-item-padding;
-    color: $breadcrumb-divider-color;
-    content: "#{$breadcrumb-divider}";
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 
   // IE9-11 hack to properly handle hyperlink underlines for breadcrumbs built

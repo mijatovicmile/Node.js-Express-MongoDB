@@ -24,12 +24,16 @@ module.exports = class Product {
      * I want to receive a title and description of the product which will then create from inside my controller.
      * This allows me to create an object on this class where I can pass the title and description to the constructor 
      * which we call with "new Product"
-     * @param {*} productTitle product title property
-     * @param {*} productDescription product description property
+     * @param {*} title product title property
+     * @param {*} image product Image Url
+     * @param {*} description product description property
+     * @param {*} price product price property
      */
-    constructor(productTitle, productDescription) {
-        this.title = productTitle;
-        this.description = productDescription;
+    constructor(title, image, description, price) {
+        this.title = title;
+        this.image = image;
+        this.description = description;
+        this.price = price;
     }
     
     /**

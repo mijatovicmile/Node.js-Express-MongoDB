@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 // stylelint-disable property-blacklist
 // Single side border-radius
 
@@ -10,23 +8,6 @@
   @else if $fallback-border-radius != false {
     border-radius: $fallback-border-radius;
   }
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-// Single side border-radius
-
-@mixin border-radius($radius: $border-radius) {
-  @if $enable-rounded {
-    border-radius: $radius;
-  }
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 }
 
 @mixin border-top-radius($radius) {
@@ -56,8 +37,6 @@
     border-bottom-left-radius: $radius;
   }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 @mixin border-top-left-radius($radius) {
   @if $enable-rounded {
@@ -82,11 +61,3 @@
     border-bottom-left-radius: $radius;
   }
 }
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase

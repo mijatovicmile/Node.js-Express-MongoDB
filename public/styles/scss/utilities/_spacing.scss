@@ -8,18 +8,6 @@
 
     @each $prop, $abbrev in (margin: m, padding: p) {
       @each $size, $length in $spacers {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
         .#{$abbrev}#{$infix}-#{$size} { #{$prop}: $length !important; }
         .#{$abbrev}t#{$infix}-#{$size},
         .#{$abbrev}y#{$infix}-#{$size} {
@@ -40,8 +28,6 @@
       }
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     // Negative margins (e.g., where `.mb-n1` is negative version of `.mb-1`)
     @each $size, $length in $spacers {
       @if $size != 0 {
@@ -65,14 +51,6 @@
       }
     }
 
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     // Some special margin utils
     .m#{$infix}-auto { margin: auto !important; }
     .mt#{$infix}-auto,

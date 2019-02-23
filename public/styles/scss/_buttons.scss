@@ -6,8 +6,6 @@
 
 .btn {
   display: inline-block;
-<<<<<<< HEAD
-<<<<<<< HEAD
   font-family: $btn-font-family;
   font-weight: $btn-font-weight;
   color: $body-color;
@@ -21,28 +19,6 @@
 
   @include hover {
     color: $body-color;
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  font-weight: $btn-font-weight;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
-  border: $btn-border-width solid transparent;
-  @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
-  @include transition($btn-transition);
-
-  // Share hover and focus styles
-  @include hover-focus {
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     text-decoration: none;
   }
 
@@ -59,29 +35,8 @@
     @include box-shadow(none);
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   &:not(:disabled):not(.disabled):active,
   &:not(:disabled):not(.disabled).active {
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  // Opinionated: add "hand" cursor to non-disabled .btn elements
-  &:not(:disabled):not(.disabled) {
-    cursor: pointer;
-  }
-
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active {
-    background-image: none;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     @include box-shadow($btn-active-box-shadow);
 
     &:focus {
@@ -122,71 +77,23 @@ fieldset:disabled a.btn {
 .btn-link {
   font-weight: $font-weight-normal;
   color: $link-color;
-<<<<<<< HEAD
-<<<<<<< HEAD
   text-decoration: $link-decoration;
-=======
-  background-color: transparent;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  background-color: transparent;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 
   @include hover {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    background-color: transparent;
-    border-color: transparent;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-    background-color: transparent;
-    border-color: transparent;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 
   &:focus,
   &.focus {
     text-decoration: $link-hover-decoration;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    border-color: transparent;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-    border-color: transparent;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     box-shadow: none;
   }
 
   &:disabled,
   &.disabled {
     color: $btn-link-disabled-color;
-<<<<<<< HEAD
-<<<<<<< HEAD
     pointer-events: none;
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 
   // No need for an active state here
@@ -198,29 +105,11 @@ fieldset:disabled a.btn {
 //
 
 .btn-lg {
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
 }
 
 .btn-sm {
   @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $font-size-lg, $btn-line-height-lg, $btn-border-radius-lg);
-}
-
-.btn-sm {
-  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 }
 
 

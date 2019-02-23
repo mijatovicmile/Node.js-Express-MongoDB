@@ -8,19 +8,7 @@
   // Our parent element can be arbitrary since tooltips are by default inserted as a sibling of their target element.
   // So reset our font and text properties to avoid inheriting weird values.
   @include reset-text();
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include font-size($popover-font-size);
-=======
-  font-size: $popover-font-size;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  font-size: $popover-font-size;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   // Allow breaking very long words so they don't overflow the popover's bounds
   word-wrap: break-word;
   background-color: $popover-bg;
@@ -50,8 +38,6 @@
 .bs-popover-top {
   margin-bottom: $popover-arrow-height;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   > .arrow {
     bottom: calc((#{$popover-arrow-height} + #{$popover-border-width}) * -1);
 
@@ -66,59 +52,17 @@
       border-width: $popover-arrow-height ($popover-arrow-width / 2) 0;
       border-top-color: $popover-arrow-color;
     }
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  .arrow {
-    bottom: calc((#{$popover-arrow-height} + #{$popover-border-width}) * -1);
-  }
-
-  .arrow::before,
-  .arrow::after {
-    border-width: $popover-arrow-height ($popover-arrow-width / 2) 0;
-  }
-
-  .arrow::before {
-    bottom: 0;
-    border-top-color: $popover-arrow-outer-color;
-  }
-
-  .arrow::after {
-    bottom: $popover-border-width;
-    border-top-color: $popover-arrow-color;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 }
 
 .bs-popover-right {
   margin-left: $popover-arrow-height;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   > .arrow {
-=======
-  .arrow {
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  .arrow {
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     left: calc((#{$popover-arrow-height} + #{$popover-border-width}) * -1);
     width: $popover-arrow-height;
     height: $popover-arrow-width;
     margin: $border-radius-lg 0; // make sure the arrow does not touch the popover's rounded corners
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     &::before {
       left: 0;
@@ -131,40 +75,12 @@
       border-width: ($popover-arrow-width / 2) $popover-arrow-height ($popover-arrow-width / 2) 0;
       border-right-color: $popover-arrow-color;
     }
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  }
-
-  .arrow::before,
-  .arrow::after {
-    border-width: ($popover-arrow-width / 2) $popover-arrow-height ($popover-arrow-width / 2) 0;
-  }
-
-  .arrow::before {
-    left: 0;
-    border-right-color: $popover-arrow-outer-color;
-  }
-
-  .arrow::after {
-    left: $popover-border-width;
-    border-right-color: $popover-arrow-color;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 }
 
 .bs-popover-bottom {
   margin-top: $popover-arrow-height;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   > .arrow {
     top: calc((#{$popover-arrow-height} + #{$popover-border-width}) * -1);
 
@@ -179,34 +95,6 @@
       border-width: 0 ($popover-arrow-width / 2) $popover-arrow-height ($popover-arrow-width / 2);
       border-bottom-color: $popover-arrow-color;
     }
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  .arrow {
-    top: calc((#{$popover-arrow-height} + #{$popover-border-width}) * -1);
-  }
-
-  .arrow::before,
-  .arrow::after {
-    border-width: 0 ($popover-arrow-width / 2) $popover-arrow-height ($popover-arrow-width / 2);
-  }
-
-  .arrow::before {
-    top: 0;
-    border-bottom-color: $popover-arrow-outer-color;
-  }
-
-  .arrow::after {
-    top: $popover-border-width;
-    border-bottom-color: $popover-arrow-color;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 
   // This will remove the popover-header's border just below the arrow
@@ -216,19 +104,7 @@
     left: 50%;
     display: block;
     width: $popover-arrow-width;
-<<<<<<< HEAD
-<<<<<<< HEAD
     margin-left: -$popover-arrow-width / 2;
-=======
-    margin-left: ($popover-arrow-width / -2);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-    margin-left: ($popover-arrow-width / -2);
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     content: "";
     border-bottom: $popover-border-width solid $popover-header-bg;
   }
@@ -237,25 +113,11 @@
 .bs-popover-left {
   margin-right: $popover-arrow-height;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
   > .arrow {
-=======
-  .arrow {
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  .arrow {
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
     right: calc((#{$popover-arrow-height} + #{$popover-border-width}) * -1);
     width: $popover-arrow-height;
     height: $popover-arrow-width;
     margin: $border-radius-lg 0; // make sure the arrow does not touch the popover's rounded corners
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     &::before {
       right: 0;
@@ -268,32 +130,6 @@
       border-width: ($popover-arrow-width / 2) 0 ($popover-arrow-width / 2) $popover-arrow-height;
       border-left-color: $popover-arrow-color;
     }
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  }
-
-  .arrow::before,
-  .arrow::after {
-    border-width: ($popover-arrow-width / 2) 0 ($popover-arrow-width / 2) $popover-arrow-height;
-  }
-
-  .arrow::before {
-    right: 0;
-    border-left-color: $popover-arrow-outer-color;
-  }
-
-  .arrow::after {
-    right: $popover-border-width;
-    border-left-color: $popover-arrow-color;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 }
 
@@ -317,19 +153,7 @@
 .popover-header {
   padding: $popover-header-padding-y $popover-header-padding-x;
   margin-bottom: 0; // Reset the default from Reboot
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include font-size($font-size-base);
-=======
-  font-size: $font-size-base;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  font-size: $font-size-base;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   color: $popover-header-color;
   background-color: $popover-header-bg;
   border-bottom: $popover-border-width solid darken($popover-header-bg, 5%);

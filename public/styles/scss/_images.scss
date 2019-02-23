@@ -32,35 +32,11 @@
 }
 
 .figure-img {
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-bottom: $spacer / 2;
-=======
-  margin-bottom: ($spacer / 2);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  margin-bottom: ($spacer / 2);
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   line-height: 1;
 }
 
 .figure-caption {
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include font-size($figure-caption-font-size);
-=======
-  font-size: $figure-caption-font-size;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  font-size: $figure-caption-font-size;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   color: $figure-caption-color;
 }

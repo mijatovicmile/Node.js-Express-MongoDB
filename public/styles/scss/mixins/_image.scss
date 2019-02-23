@@ -20,18 +20,6 @@
 //
 // Short retina mixin for setting background-image and -size.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-// stylelint-disable indentation, media-query-list-comma-newline-after
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-// stylelint-disable indentation, media-query-list-comma-newline-after
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 @mixin img-retina($file-1x, $file-2x, $width-1x, $height-1x) {
   background-image: url($file-1x);
 
@@ -40,26 +28,9 @@
   // There's no such thing as unprefixed min-device-pixel-ratio since it's nonstandard.
   // Compatibility info: https://caniuse.com/#feat=css-media-resolution
   @media only screen and (min-resolution: 192dpi), // IE9-11 don't support dppx
-<<<<<<< HEAD
-<<<<<<< HEAD
     only screen and (min-resolution: 2dppx) { // Standardized
     background-image: url($file-2x);
     background-size: $width-1x $height-1x;
   }
   @include deprecate("`img-retina()`", "v4.3.0", "v5");
-=======
-=======
->>>>>>> b695cb8... Updating EJS Template
-  only screen and (min-resolution: 2dppx) { // Standardized
-    background-image: url($file-2x);
-    background-size: $width-1x $height-1x;
-  }
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
-<<<<<<< HEAD
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 }

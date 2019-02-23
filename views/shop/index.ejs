@@ -1,5 +1,5 @@
-<%- include('includes/head.ejs') %>
-    <%- include('includes/navigation.ejs') %>
+<%- include('../includes/head.ejs') %>
+    <%- include('../includes/navigation.ejs') %>
     <div class="container">
         <div class="row">
             <% if (prods.length > 0) { %>
@@ -10,11 +10,12 @@
                                 <h5 class="mb-0"><%= product.title %></h5>
                             </div>
                             <div class="card-image">
-                                <img class="card-img-top rounded-0" src="https://dummyimage.com/600x400/8c198c/ffffff" alt="Card image cap"></img>
+                                <img class="card-img-top rounded-0" src="<%= product.image %>" alt="<%= product.title %>"></img>
                             </div>
                             <div class="card-body">
-                                <p class="card-text"><%= product.description %></p>
-                                <a href="#" class="btn btn-primary">Add Product</a>
+                                <p class="card-text price font-weight-bold"><%= product.price %> €</p>
+                                <p class="card-text description"><%= product.description %></p>
+                                <a href="#" class="btn btn-info">Add to Cart</a>
                             </div>
                         </div>
                    </div>
@@ -26,4 +27,4 @@
             <% } %> 
         </div>
     </div>
-<%- include('includes/end.ejs') %>
+<%- include('../includes/end.ejs') %>

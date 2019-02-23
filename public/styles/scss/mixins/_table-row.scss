@@ -1,18 +1,6 @@
 // Tables
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 @mixin table-row-variant($state, $background, $border: null) {
-=======
-@mixin table-row-variant($state, $background) {
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-@mixin table-row-variant($state, $background) {
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   // Exact selectors below required to override `.table-striped` and prevent
   // inheritance to nested tables.
   .table-#{$state} {
@@ -21,8 +9,6 @@
     > td {
       background-color: $background;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     @if $border != null {
       th,
@@ -32,14 +18,6 @@
         border-color: $border;
       }
     }
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 
   // Hover states for `.table-hover`

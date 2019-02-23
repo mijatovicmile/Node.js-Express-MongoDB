@@ -6,27 +6,13 @@
 .badge {
   display: inline-block;
   padding: $badge-padding-y $badge-padding-x;
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include font-size($badge-font-size);
-=======
-  font-size: $badge-font-size;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  font-size: $badge-font-size;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   font-weight: $badge-font-weight;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
   @include border-radius($badge-border-radius);
-<<<<<<< HEAD
-<<<<<<< HEAD
   @include transition($badge-transition);
 
   @at-root a#{&} {
@@ -34,14 +20,6 @@
       text-decoration: none;
     }
   }
-=======
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 
   // Empty badges collapse automatically
   &:empty {

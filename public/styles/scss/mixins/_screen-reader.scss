@@ -1,18 +1,6 @@
 // Only display content to screen readers
 //
-<<<<<<< HEAD
-<<<<<<< HEAD
 // See: https://a11yproject.com/posts/how-to-hide-content/
-=======
-// See: http://a11yproject.com/posts/how-to-hide-content/
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-// See: http://a11yproject.com/posts/how-to-hide-content/
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
 // See: https://hugogiraudel.com/2016/10/13/css-hide-and-seek/
 
 @mixin sr-only {
@@ -23,18 +11,6 @@
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  clip-path: inset(50%);
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-  clip-path: inset(50%);
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   border: 0;
 }
 
@@ -53,17 +29,5 @@
     overflow: visible;
     clip: auto;
     white-space: normal;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    clip-path: none;
-<<<<<<< HEAD
->>>>>>> b581025... Updating EJS Template
-=======
->>>>>>> b581025fadbdd1c5532877325f463d1b99650a7a
-=======
-    clip-path: none;
->>>>>>> b695cb8... Updating EJS Template
->>>>>>> 060937b... Rebase
   }
 }
