@@ -11,6 +11,9 @@ const shopRoutes = require('./routes/shop');
 // Import error controller, which we will use for Page Not Found (404)
 const errorController = require('./controllers/error');
 
+// MongoDB connection code 
+const mongoConnect = require('./util/database');
+
 
 /**
  * Create an Express application and store it in a constant named app, by running express() as a function
@@ -55,6 +58,8 @@ app.use(shopRoutes);
 // Adding a 404 Error Page (Page Not Found) with reference to the appropriate controller (errorController)
 app.use(errorController.error);
 
-const port = 3000;
-
-app.listen(port, () => (`Example app listening on port ${port}!`));
+// Execute MongoDB connection with object callback
+mongoConnect((client) => {
+    console.log(client);
+    app.listen(3000);
+});

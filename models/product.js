@@ -40,6 +40,7 @@ module.exports = class Product {
      * With save() method we will store our product into data folder
      */
     save() {
+        this.id = Math.random().toString().substring(2);
         // Get the application path to the data folder, and product.json file into that folder
         getProductsFromFile(products => {
             products.push(this);
@@ -56,5 +57,12 @@ module.exports = class Product {
      */
     static fetchAll(callback) {
         getProductsFromFile(callback);
+    }
+
+    static findById(id, callback) {
+        getProductsFromFile(products => {
+            const product = products.find(p => p.id === id);
+            callback(product);
+        });
     }
 }

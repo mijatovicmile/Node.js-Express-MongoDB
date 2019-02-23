@@ -1,4 +1,17 @@
 <%- include('../includes/head.ejs') %>
     <%- include('../includes/navigation.ejs') %>
-    <p>Product detail</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1><%= product.title %></h1>
+                <hr>
+                <img src="<%= product.image %>" alt="<%= product.title %>">
+                <h2><%= product.price %> €</h2>
+                <p><%= product.description %></p>
+                <form action="/cart" method="POST">
+                    <button type="submit" class="btn btn-primary">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+    </div>
 <%- include('../includes/end.ejs') %>
