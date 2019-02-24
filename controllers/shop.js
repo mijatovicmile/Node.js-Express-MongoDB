@@ -1,4 +1,5 @@
 const Product = require('../models/product');
+const Cart = require('../models/cart');
 
 // Get products controller (shop page)
 exports.getProducts = (req, res, next) => {
@@ -38,6 +39,14 @@ exports.getCart = (req, res, next) => {
         pageId: '/cart'
     });
 };
+
+exports.postCart = (req, res, next) => {
+    const productId = req.body.productId;
+    Product.findById(productId, (product) => {
+        Cart.addProduct(productId, product.price);
+    })
+    res.redirect('/cart');
+}
 
 exports.getOrders = (req, res, next) => {
     res.render('shop/orders', {

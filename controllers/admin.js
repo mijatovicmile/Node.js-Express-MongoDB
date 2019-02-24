@@ -3,7 +3,7 @@ const Product = require('../models/product');
 
 // Controller for get Add product page 
 exports.getAddProducts = (req, res, next) => {
-    res.render('admin/add-product', {     
+    res.render('admin/edit-product', {     
         // Display "Add Product" as a title of page (in the browser tab)
         pageTitle: 'Add Product',
         /**
