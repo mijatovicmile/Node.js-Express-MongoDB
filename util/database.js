@@ -2,7 +2,7 @@
 const mongodb = require('mongodb').MongoClient;
 
 // Connection URL
-const url = 'mongodb+srv://MileMijatovic:<PASSWORD>@cluster0-ifmd1.mongodb.net/test?retryWrites=true';
+const url = 'mongodb+srv://MileMijatovic:GuNF985YQtXRbSPB@cluster0-ifmd1.mongodb.net/test?retryWrites=true';
 
 // Wrap and execute MongoDB connection code into mongoConnect function
 const mongoConnect = callback => {
@@ -13,7 +13,7 @@ const mongoConnect = callback => {
         console.log('Successfully connected to the MongoDB!');
         callback(client);
     })
-    // If connection to database fails
+    // If connection to database failsS
     .catch(err => {
         // Ouput the error message
         console.log('Error', err);

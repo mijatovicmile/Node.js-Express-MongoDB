@@ -29,7 +29,7 @@ module.exports = class Cart {
              * Loop for all the products and have a look at each of them and take check if the product ID
              * matches the ID of the product we try to add.
              */
-            const existingProductIndex = cart.products.findIndex(product => product.id === id);
+            const existingProductIndex = cart.products.findIndex(prod => prod.id === id);
             /**
              * Find out where in old products was located (which position it had), which allows us to use
              * that index to replace the item in our card with new updated one
@@ -70,10 +70,29 @@ module.exports = class Cart {
              * Save our cart in "/data/path folder" in JSON format
              * @param {*} p previously defined path
              */
-            fs.writeFile(p, JSON.stringify(cart), (err) => {
+            fs.writeFile(p, JSON.stringify(cart), err => {
                 // If we have some error while saving the cart
                 console.log(err);
             })
         });
+    }
+
+    static deleteProduct(id, productPrice) {
+        fs.readFile(p, (err, fileContent) => {
+            if (err) {
+                return;
+            } 
+            const updatedCart = { ...JSON.parse(fileContent) };
+            const product = updatedCart.products.find(prod => prod.id === id);
+            const productQty = product.quantity;
+
+            updatedCart.products = updatedCart.products.filter(prod => prod.id !== id);
+            updatedCart.totalPrice = updatedCart.totalPrice - productPrice * productQty;
+
+            fs.writeFile(p, JSON.stringify(updatedCart), err => {
+                // If we have some error while saving the cart
+                console.log(err);
+            })
+        })
     }
 };

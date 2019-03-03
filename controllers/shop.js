@@ -1,6 +1,7 @@
 const Product = require('../models/product');
 const Cart = require('../models/cart');
 
+
 // Get products controller (shop page)
 exports.getProducts = (req, res, next) => {
     Product.fetchAll((products) => {
