@@ -13,6 +13,7 @@ router.get('/products/:productId', shopController.getProduct);
 // Route to the shop cart
 router.get('/cart', shopController.getCart);
 router.post('/cart', shopController.postCart);
+router.post('/delete-cart-item', shopController.postDeleteCartItem);
 // Route to the orders
 router.get('/orders', shopController.getOrders);
 // Route to the checkout page 

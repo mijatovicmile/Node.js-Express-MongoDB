@@ -3,7 +3,23 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <p>Cart</p>
+                <% if (products.length > 0) { %>
+                    <ul>
+                        <% products.forEach(product => { %>
+                            <li>
+                                <p><%= product.productData.title %> (<%= product.quantity %>)</p>
+                                <form action="/delete-cart-item" method="POST">
+                                    <input type="hidden" value="<%= product.productData.id %>" name="productId">
+                                    <button type="submit" class="btn btn-danger">
+                                        Delete
+                                    </button>
+                                </form>
+                            </li>
+                        <% }) %>
+                    </ul>
+                <% } else { %>
+                    <span class="no-products-found">No Products in Cart!</span>
+                <% } %>
             </div>
         </div>
     </div>
