@@ -16,7 +16,7 @@
                                 <p class="card-text price font-weight-bold"><%= product.price %> €</p>
                                 <p class="card-text description"><%= product.description %></p>
                                 <div class="card-actions">
-                                    <a href="/products/<%= product.id %>" class="btn btn-primary">Details</a>
+                                    <a href="/products/<%= product._id %>" class="btn btn-primary">Details</a>
                                     <%- include('../includes/add-to-cart.ejs', { product: product }) %>
                                 </div>
                             </div>

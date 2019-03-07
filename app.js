@@ -11,8 +11,8 @@ const shopRoutes = require('./routes/shop');
 // Import error controller, which we will use for Page Not Found (404)
 const errorController = require('./controllers/error');
 
-// MongoDB connection code 
-const mongoConnect = require('./util/database');
+// MongoDB connection code as a function
+const mongoConnect = require('./util/database').mongoConnect;
 
 
 /**
@@ -59,7 +59,6 @@ app.use(shopRoutes);
 app.use(errorController.error);
 
 // Execute MongoDB connection with object callback
-mongoConnect((client) => {
-    console.log(client);
+mongoConnect(() => {
     app.listen(3000);
 });

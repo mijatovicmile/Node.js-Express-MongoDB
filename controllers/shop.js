@@ -1,36 +1,55 @@
 const Product = require('../models/product');
 const Cart = require('../models/cart');
-
-
-// Get products controller (shop page)
+ 
+// Controller for fetching All products from database
 exports.getProducts = (req, res, next) => {
-    Product.fetchAll((products) => {
+    Product.fetchAll()
+    .then(products => {
         res.render('shop/product-list', { 
             pageTitle: 'All Products',
             prods: products,
             pageId: '/products'
         })
+    })
+    // Catch and log any potential error we might have
+    .catch(err => {
+        console.log(err);
     });
 };
 
+// Controller for fetching a single product from database based on product Id
 exports.getProduct = (req, res, next) => {
+    // Get the product ID as part of the URL
     const productId = req.params.productId;
-    Product.findById(productId, product => {
-        res.render('shop/product-detail', { 
-            product: product,
-            pageTitle: product.title,
-            pageId: '/products' 
+    // Use product model to find the filtered product
+    Product.findById(productId)
+        .then(product => {
+            // Render the product detail page
+            res.render('shop/product-detail', { 
+                product: product,
+                pageTitle: product.title,
+                pageId: '/products' 
+            });
+        })
+        // Catch and log any potential error we might have
+        .catch(err => {
+            console.log(err); 
         });
-    });
 };
 
+// Controller for fetching all product from database on the Shop page
 exports.getIndex = (req, res, next) => {
-    Product.fetchAll((products) => {
+    Product.fetchAll()
+    .then(products => {
         res.render('shop/index', { 
             pageTitle: 'Shop',
             prods: products,
             pageId: '/'
         })
+    })
+    // Catch and log any potential error we might have
+    .catch(err => {
+        console.log(err);
     });
 };
 
