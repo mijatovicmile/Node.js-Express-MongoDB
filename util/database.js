@@ -1,24 +1,27 @@
-// The official MongoDB driver for Node.js
+// The official MongoDB package driver for Node.js
 const mongodb = require('mongodb');
+
 // Extract MongoClient constructor 
 const MongoClient = mongodb.MongoClient;
 
 // Connection URL to the MongoDB Cluster
 const url = 'mongodb+srv://MileMijatovic:GuNF985YQtXRbSPB@cluster0-ifmd1.mongodb.net/shop?retryWrites=true';
 
-// Wrap and execute MongoDB connection code into mongoConnect method
+// Wrap MongoDB connection code into mongoConnect method
 const mongoConnect = callback => {
     // Use connect method to connect to the server (Create connection to MongoDB)
-    MongoClient.connect(url, { useNewUrlParser: true })
+    MongoClient.connect(url, { 
+        useNewUrlParser: true 
+    })
     // If connection to the database is successful
     .then(client => {
         _db = client.db();
         callback();
     })
-    // If connection to database fails
+    // If connection to the database fails
     .catch(err => {
         // Ouput the error message
-        console.log('Error', err);
+        console.log('Connection to the database failed', err);
     });
 };
 

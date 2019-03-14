@@ -1,14 +1,16 @@
+// Import the Product model in our shop controller
 const Product = require('../models/product');
-const Cart = require('../models/cart');
  
 // Controller for fetching All products from database
 exports.getProducts = (req, res, next) => {
     Product.fetchAll()
     .then(products => {
-        res.render('shop/product-list', { 
+        res.render('shop/product-list', {  
             pageTitle: 'All Products',
             prods: products,
-            pageId: '/products'
+            pageId: '/products',
+            // Pass the information whether the user is authenticated or not
+            isAuthenticated: req.session.isLoggedIn
         })
     })
     // Catch and log any potential error we might have
@@ -28,7 +30,9 @@ exports.getProduct = (req, res, next) => {
             res.render('shop/product-detail', { 
                 product: product,
                 pageTitle: product.title,
-                pageId: '/products' 
+                pageId: '/products',
+                // Pass the information whether the user is authenticated or not
+                isAuthenticated: req.session.isLoggedIn
             });
         })
         // Catch and log any potential error we might have
@@ -44,7 +48,9 @@ exports.getIndex = (req, res, next) => {
         res.render('shop/index', { 
             pageTitle: 'Shop',
             prods: products,
-            pageId: '/'
+            pageId: '/',
+            // Pass the information whether the user is authenticated or not
+            isAuthenticated: req.session.isLoggedIn
         })
     })
     // Catch and log any potential error we might have
@@ -53,51 +59,83 @@ exports.getIndex = (req, res, next) => {
     });
 };
 
+// Controller for displaying the Cart items
 exports.getCart = (req, res, next) => {
-    Cart.getCart(cart => {
-        Product.fetchAll(products => {
-            const cartProducts = [];
-            for (product of products) {
-                const cartProductData = cart.products.find(prod => prod.id === product.id);
-                if (cartProductData) {
-                    cartProducts.push({productData: product, quantity: cartProductData.quantity});
-                }
-            }
+    req.user
+        .getCart()
+        .then(products => {
             res.render('shop/cart', {
-                pageTitle: 'Cart',
                 pageId: '/cart',
-                products: cartProducts
-            });
+                pageTitle: 'Your Cart',
+                products: products,
+                // Pass the information whether the user is authenticated or not
+                isAuthenticated: req.session.isLoggedIn
+            })
         })
-    });
+        .catch(err => {
+            console.log(err);
+        })
 };
 
+// Controller for posting product to the cart and finding if that product is already inside of the cards
 exports.postCart = (req, res, next) => {
+    // Get my product id
     const productId = req.body.productId;
-    Product.findById(productId, (product) => {
-        Cart.addProduct(productId, product.price);
-    })
-    res.redirect('/cart');
+    // Find and fetch a product by product Id
+    Product.findById(productId)
+        // Product that I want to add to the cart 
+        .then(product => {
+            // User from user model
+            return req.user.addToCart(product);
+        })
+        // Result of the update operation
+        .then(result => {
+            console.log(result);
+            res.redirect('/cart');
+        })
+        // Catch and log any potential error we might have
+        .catch(err => {
+            console.log(err);
+        });        
 }
 
+// Controller for deleting cart item from the cart
 exports.postDeleteCartItem = (req, res, next) => {
+    // Get my product id
     const prodId = req.body.productId;
-    Product.findById(prodId, product => {
-        Cart.deleteProduct(prodId, product.price);
-        res.redirect('/cart');
-    });
+    req.user.deleteItemFromCart(prodId)
+        .then(result => {
+            res.redirect('/cart');
+        })
+        // Catch and log any potential error we might have
+        .catch(err => {
+            console.log(err);
+        })
 };
 
+// Controller for posting an order(s)
+exports.postOrder = (req, res, next) => {
+    req.user 
+        .addOrder()
+        .then(result => {
+            res.redirect('/orders')
+        })
+        .catch(err => {
+            console.log(err);
+        })
+};
+
+// Controller for getting the orders
 exports.getOrders = (req, res, next) => {
-    res.render('shop/orders', {
-        pageTitle: 'Orders',
-        pageId: '/orders'
-    });
-};
-
-exports.getCheckout = (req, res, next) => {
-    res.render('shop/checkout', {
-        pageTitle: 'Checkout',
-        pageId: '/checkout'
-    });
+    req.user 
+        .getOrders()
+        .then(orders => {
+            res.render('shop/orders', {
+                pageTitle: 'Orders',
+                pageId: '/orders',
+                orders: orders,
+                // Pass the information whether the user is authenticated or not
+                isAuthenticated: req.session.isLoggedIn
+            });
+        })
 };

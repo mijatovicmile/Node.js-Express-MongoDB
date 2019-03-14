@@ -29,8 +29,10 @@
   },
   "homepage": "https://github.com/mijatovicmile/Node.js-MVC-RESTfull-API-MongoDB#readme",
   "dependencies": {
+    "connect-mongodb-session": "^2.1.1",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "express-session": "^1.15.6",
     "mongodb": "^3.1.13",
     "multer": "^1.4.1"
   },

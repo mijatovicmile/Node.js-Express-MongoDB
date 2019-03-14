@@ -1,7 +1,9 @@
 const express = require('express');
+
+// Create modular, mountable route handlers. A Router instance is a complete middleware and routing system
 const router = express.Router();
 
-// Products controller
+// Admin controller
 const adminController = require('../controllers/admin');
 
 // Route to the /admin/add-product page where we will adding new products as admin

@@ -12,18 +12,33 @@
       <li class="<%= pageId  === '/products' ? 'nav-item active' : 'nav-item' %>">
         <a class="nav-link" href="/products">Products</a>
       </li>
-      <li class="<%= pageId  === '/cart' ? 'nav-item active' : 'nav-item' %>">
-        <a class="nav-link" href="/cart">Cart</a>
-      </li>
-      <li class="<%= pageId  === '/orders' ? 'nav-item active' : 'nav-item' %>">
-        <a class="nav-link" href="/orders">Orders</a>
-      </li>
-      <li class="<%= pageId  === '/admin/add-product' ? 'nav-item active' : 'nav-item' %>">
-        <a class="nav-link" href="/admin/add-product">Add Product</a>
-      </li>
-      <li class="<%= pageId  === '/admin/products' ? 'nav-item active' : 'nav-item' %>">
-        <a class="nav-link" href="/admin/products">Admin Products</a>
-      </li>
+      <% if (isAuthenticated) { %>
+        <li class="<%= pageId  === '/cart' ? 'nav-item active' : 'nav-item' %>">
+          <a class="nav-link" href="/cart">Cart</a>
+        </li>
+        <li class="<%= pageId  === '/orders' ? 'nav-item active' : 'nav-item' %>">
+          <a class="nav-link" href="/orders">Orders</a>
+        </li>
+        <li class="<%= pageId  === '/admin/add-product' ? 'nav-item active' : 'nav-item' %>">
+          <a class="nav-link" href="/admin/add-product">Add Product</a>
+        </li>
+        <li class="<%= pageId  === '/admin/products' ? 'nav-item active' : 'nav-item' %>">
+          <a class="nav-link" href="/admin/products">Admin Products</a>
+        </li>
+      <% } %>
     </ul>
+    <ul class="navbar-nav">
+        <% if (!isAuthenticated) { %>
+          <li class="<%= pageId  === '/login' ? 'nav-item active' : 'nav-item' %>">
+            <a href="/login" class="nav-link">Login</a>
+          </li>
+        <% } else { %>  
+          <li class="nav-item">
+            <form action="/logout" method="post" id="logoutForm">
+              <a onclick="document.getElementById('logoutForm').submit()" class="nav-link cursor-pointer">Logout</a>
+            </form>
+          </li>
+        <% } %>    
+    </ul> 
   </div>
 </nav>   
