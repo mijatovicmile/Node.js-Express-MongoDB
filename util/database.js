@@ -4,8 +4,16 @@ const mongodb = require('mongodb');
 // Extract MongoClient constructor 
 const MongoClient = mongodb.MongoClient;
 
+// Require and configure dotenv module, which loads environment variables from a .env file into process.env
+require('dotenv').config(); 
+
 // Connection URL to the MongoDB Cluster
-const url = 'mongodb+srv://MileMijatovic:GuNF985YQtXRbSPB@cluster0-ifmd1.mongodb.net/shop?retryWrites=true';
+const url = 'mongodb+srv://' + 
+            process.env.MONGO_ATLAS_USER + 
+            ':' + 
+            process.env.MONGO_ATLAS_PASSWORD + 
+            '@cluster0-ifmd1.mongodb.net/shop?retryWrites=true';
+            
 
 // Wrap MongoDB connection code into mongoConnect method
 const mongoConnect = callback => {
@@ -17,6 +25,7 @@ const mongoConnect = callback => {
     .then(client => {
         _db = client.db();
         callback();
+        console.log('Successfully connected to the database');
     })
     // If connection to the database fails
     .catch(err => {

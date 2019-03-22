@@ -113,6 +113,16 @@ exports.postDeleteCartItem = (req, res, next) => {
         })
 };
 
+// Controller for checkout page
+exports.getCheckout = (req, res, next) => {
+    res.render('shop/checkout', {
+        pageId: '/checkout',
+        pageTitle: 'Checkout',
+        // Pass the information whether the user is authenticated or not
+        isAuthenticated: req.session.isLoggedIn
+    })
+};
+
 // Controller for posting an order(s)
 exports.postOrder = (req, res, next) => {
     req.user 

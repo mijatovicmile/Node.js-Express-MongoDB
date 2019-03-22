@@ -12,6 +12,12 @@ router.post('/login', authController.postLogin);
 
 // User logout
 router.post('/logout', authController.postLogout);
+
+// Signup route - GET method
+router.get('/signup', authController.getSignup);
+
+// Signup route - POST method
+router.post('/signup', authController.postSignup);
  
 // Exports the auth module
 module.exports = router;

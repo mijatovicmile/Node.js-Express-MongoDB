@@ -20,6 +20,9 @@ router.get('/cart', shopController.getCart);
 // Route for shop cart - POST method
 router.post('/cart', shopController.postCart);
 
+// Router for checkout page
+router.get('/checkout', shopController.getCheckout);
+
 // Route for deleting cart items - POST method
 router.post('/delete-cart-item', shopController.postDeleteCartItem);
 

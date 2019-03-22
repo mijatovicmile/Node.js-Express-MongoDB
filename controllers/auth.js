@@ -1,3 +1,4 @@
+// Import User model
 const User = require('../models/user');
 
 // User login controller - GET method
@@ -53,4 +54,66 @@ exports.postLogout = (req, res, next) => {
         // Redirect to the home page (shop) 
         res.redirect('/');
     });
+};
+
+// Signup controller - GET method
+exports.getSignup = (req, res, next) => {
+    res.render('auth/signup', {
+        pageTitle: 'Login',
+        /**
+         * Render a 'active' class on each of navigation links depending on which page we're on
+         * We will render a 'active' class based on pageId
+         */
+        pageId: '/signup',
+        // Pass the information whether the user is authenticated or not
+        isAuthenticated: req.session.isLoggedIn
+    });
+};
+
+// Signup controller - POST method
+exports.postSignup = (req, res, next) => {
+    /**
+     * Here I want to store a new user in the database
+     * so first I want to extract the information from the incoming request
+     */
+
+    // Retrieve email value from email input field
+    const email = req.body.email;
+
+    // Retreive password value from password input field
+    const password = req.body.password;
+
+    // Retreive confirmPassword value 
+    const confirmPassword = req.body.confirmPassword;
+
+    /**
+     * I will use User model to find if one user with specific email already exist,
+     * and if exist, I don't want to create a new user with that email
+     */
+    User.findUserById({ email: email })
+        .then(userDocument => {
+          /**
+           * If is not undefined and already exist, 
+           * then we have a user and I dont want to create a new one with the same email
+           */
+            if (userDocument) {
+                return res.redirect('/signup');
+            } 
+            // If user does not exist, create new User
+            const user = new User({
+                email: email,
+                password: password,
+                cart: { items: [] }
+            })
+            // Save user to the database
+            return user.save()
+        })
+        // When saving is done, redirect to the login page
+        .then(result => {
+            res.redirect('/');
+        })
+        // Catch and log any potential error we might have
+        .catch(err => {
+            console.log(err);
+        });
 };

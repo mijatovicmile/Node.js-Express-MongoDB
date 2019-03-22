@@ -32,6 +32,9 @@
           <li class="<%= pageId  === '/login' ? 'nav-item active' : 'nav-item' %>">
             <a href="/login" class="nav-link">Login</a>
           </li>
+          <li class="<%= pageId  === '/signup' ? 'nav-item active' : 'nav-item' %>">
+            <a href="/signup" class="nav-link">Signup</a>
+          </li>
         <% } else { %>  
           <li class="nav-item">
             <form action="/logout" method="post" id="logoutForm">

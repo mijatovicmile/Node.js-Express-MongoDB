@@ -28,7 +28,7 @@ class User {
         return db
             // Save users in 'users' collection 
             .collection('users')
-            // "this" is an object I am  in, where we have name and an email property
+            // "this" is an object I am in, where we have name and an email property
             .insertOne(this)
             .then(result => {
                 console.log(result);

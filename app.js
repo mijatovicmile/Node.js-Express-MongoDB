@@ -34,8 +34,18 @@ const MongoDBStore = require('connect-mongodb-session')(session);
 // Import User model
 const User = require('./models/user');
 
+// Require and configure dotenv module, which loads environment variables from a .env file into process.env
+require('dotenv').config(); 
+
+// Application connection port
+const port = parseInt(process.env.PORT) || 3000;
+
 // Connection URL to the MongoDB Cluster
-const MONGODB_URI = 'mongodb+srv://MileMijatovic:GuNF985YQtXRbSPB@cluster0-ifmd1.mongodb.net/shop';
+const MONGODB_URI = 'mongodb+srv://' + 
+                    process.env.MONGO_ATLAS_USER + 
+                    ':' + 
+                    process.env.MONGO_ATLAS_PASSWORD + 
+                    '@cluster0-ifmd1.mongodb.net/shop'
 
 /**
  * Create an Express application and store it in a constant named app, by running express() as a function
@@ -131,5 +141,5 @@ app.use(errorController.error);
 
 // Execute MongoDB connection with a callback function that will get exexuted once we connected
 mongoConnect(() => {
-    app.listen(3000);
+    app.listen(port);
 });
